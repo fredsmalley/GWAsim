@@ -1,0 +1,1 @@
+g++ -O2 -lm -o GWAsimulator GWAsimulator.cpp

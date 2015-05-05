@@ -1,0 +1,258 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84484A451AF92CB000DCB671 /* GWAsimulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84484A441AF92CB000DCB671 /* GWAsimulator.cpp */; };
+		84484A4C1AF9345400DCB671 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 84484A4B1AF9345400DCB671 /* makefile */; };
+		84484A4F1AF949C300DCB671 /* dataanalysis.h in Sources */ = {isa = PBXBuildFile; fileRef = 84484A4E1AF949C300DCB671 /* dataanalysis.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84484A121AF9220E00DCB671 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		84484A141AF9220E00DCB671 /* GWAsimulator_v2.0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GWAsimulator_v2.0; sourceTree = BUILT_PRODUCTS_DIR; };
+		84484A441AF92CB000DCB671 /* GWAsimulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GWAsimulator.cpp; sourceTree = "<group>"; };
+		84484A461AF92CF200DCB671 /* Illumina300KCEU */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Illumina300KCEU; sourceTree = "<group>"; };
+		84484A471AF92ED700DCB671 /* build */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = build; sourceTree = "<group>"; };
+		84484A481AF92EE300DCB671 /* diseasemodel.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = diseasemodel.txt; sourceTree = "<group>"; };
+		84484A4B1AF9345400DCB671 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		84484A4D1AF9354800DCB671 /* control.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = control.dat; sourceTree = "<group>"; };
+		84484A4E1AF949C300DCB671 /* dataanalysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataanalysis.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84484A111AF9220E00DCB671 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84484A0B1AF9220E00DCB671 = {
+			isa = PBXGroup;
+			children = (
+				84484A161AF9220E00DCB671 /* GWAsimulator_v2.0 */,
+				84484A151AF9220E00DCB671 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84484A151AF9220E00DCB671 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84484A141AF9220E00DCB671 /* GWAsimulator_v2.0 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84484A161AF9220E00DCB671 /* GWAsimulator_v2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				84484A461AF92CF200DCB671 /* Illumina300KCEU */,
+				84484A441AF92CB000DCB671 /* GWAsimulator.cpp */,
+				84484A4D1AF9354800DCB671 /* control.dat */,
+				84484A4E1AF949C300DCB671 /* dataanalysis.h */,
+				84484A481AF92EE300DCB671 /* diseasemodel.txt */,
+				84484A4B1AF9345400DCB671 /* makefile */,
+				84484A471AF92ED700DCB671 /* build */,
+			);
+			path = GWAsimulator_v2.0;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84484A131AF9220E00DCB671 /* GWAsimulator_v2.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84484A1B1AF9220E00DCB671 /* Build configuration list for PBXNativeTarget "GWAsimulator_v2.0" */;
+			buildPhases = (
+				84484A101AF9220E00DCB671 /* Sources */,
+				84484A111AF9220E00DCB671 /* Frameworks */,
+				84484A121AF9220E00DCB671 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GWAsimulator_v2.0;
+			productName = GWAsimulator_v2.0;
+			productReference = 84484A141AF9220E00DCB671 /* GWAsimulator_v2.0 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84484A0C1AF9220E00DCB671 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Nathan Anderson";
+				TargetAttributes = {
+					84484A131AF9220E00DCB671 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 84484A0F1AF9220E00DCB671 /* Build configuration list for PBXProject "GWAsimulator_v2.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84484A0B1AF9220E00DCB671;
+			productRefGroup = 84484A151AF9220E00DCB671 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84484A131AF9220E00DCB671 /* GWAsimulator_v2.0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84484A101AF9220E00DCB671 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84484A451AF92CB000DCB671 /* GWAsimulator.cpp in Sources */,
+				84484A4F1AF949C300DCB671 /* dataanalysis.h in Sources */,
+				84484A4C1AF9345400DCB671 /* makefile in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		84484A191AF9220E00DCB671 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		84484A1A1AF9220E00DCB671 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		84484A1C1AF9220E00DCB671 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84484A1D1AF9220E00DCB671 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84484A0F1AF9220E00DCB671 /* Build configuration list for PBXProject "GWAsimulator_v2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84484A191AF9220E00DCB671 /* Debug */,
+				84484A1A1AF9220E00DCB671 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84484A1B1AF9220E00DCB671 /* Build configuration list for PBXNativeTarget "GWAsimulator_v2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84484A1C1AF9220E00DCB671 /* Debug */,
+				84484A1D1AF9220E00DCB671 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84484A0C1AF9220E00DCB671 /* Project object */;
+}
