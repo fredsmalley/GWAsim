@@ -1,3 +1,6 @@
+#ifndef __DATAANALYSIS__GWAsimulator__
+#define __DATAANALYSIS__GWAsimulator__
+
 /////////////////////////////////////////////////////////////////////
 //
 //  Data analysis example function for GWAsimulator
@@ -70,3 +73,5 @@ void dataanalysis(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM)
 
     for(i=0; i<NUMMARKERTOTAL; i++)  if (chisq[i] > 17) cout << i << " - " << chisq[i] << ";\n";
 }
+
+#endif

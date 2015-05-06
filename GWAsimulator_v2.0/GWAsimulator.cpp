@@ -847,7 +847,7 @@ void modelbuild(double PREV, int NUMDL, int DLPOS[], int DV[],
   if( (modelout = fopen("diseasemodel.txt", "w")) == NULL) {
     printf("Cannot output to diseasemodel.txt.");
   } else {
-    fprintf(modelout, diseasemodel);
+    fputs(diseasemodel, modelout);
   }
   fclose(modelout);
 
@@ -1314,8 +1314,7 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
 //    Uncomment the following line if you want to test the example
 //    analysis function included in the software distribution.
 ///////////////////////////////////////////////////////////////////
-#include "dataanalysis.h"
-#include <cstdlib>
+//#include "dataanalysis.h"
 
 ////////////////////////////////////////////////
 //
@@ -1387,7 +1386,7 @@ int main(int argc, char* argv[])
   //   Uncomment the following line if you want to test the example
   //   analysis function included in the software distribution.
   //////////////////////////////////////////////////////////////////////
-  dataanalysis(NUMCASEF, NUMCASEM, NUMCONTF, NUMCONTM);
+  //dataanalysis(NUMCASEF, NUMCASEM, NUMCONTF, NUMCONTM);
 
   // free up memory
   free(cum_prob_caseF); free(cum_prob_caseM); free(cum_prob_contF);

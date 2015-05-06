@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		84484A451AF92CB000DCB671 /* GWAsimulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84484A441AF92CB000DCB671 /* GWAsimulator.cpp */; };
-		84484A4F1AF949C300DCB671 /* dataanalysis.h in Sources */ = {isa = PBXBuildFile; fileRef = 84484A4E1AF949C300DCB671 /* dataanalysis.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +26,6 @@
 		84484A141AF9220E00DCB671 /* GWAsimulator_v2.0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GWAsimulator_v2.0; sourceTree = BUILT_PRODUCTS_DIR; };
 		84484A441AF92CB000DCB671 /* GWAsimulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GWAsimulator.cpp; sourceTree = "<group>"; };
 		84484A461AF92CF200DCB671 /* Illumina300KCEU */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Illumina300KCEU; sourceTree = "<group>"; };
-		84484A471AF92ED700DCB671 /* build */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = build; sourceTree = "<group>"; };
 		84484A481AF92EE300DCB671 /* diseasemodel.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = diseasemodel.txt; sourceTree = "<group>"; };
 		84484A4D1AF9354800DCB671 /* control.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = control.dat; sourceTree = "<group>"; };
 		84484A4E1AF949C300DCB671 /* dataanalysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataanalysis.h; sourceTree = "<group>"; };
@@ -64,13 +62,36 @@
 			isa = PBXGroup;
 			children = (
 				84484A461AF92CF200DCB671 /* Illumina300KCEU */,
-				84484A441AF92CB000DCB671 /* GWAsimulator.cpp */,
-				84484A4D1AF9354800DCB671 /* control.dat */,
-				84484A4E1AF949C300DCB671 /* dataanalysis.h */,
-				84484A481AF92EE300DCB671 /* diseasemodel.txt */,
-				84484A471AF92ED700DCB671 /* build */,
+				B60C541A1AFAB9C70029E382 /* files */,
+				B60C54191AFAB9B70029E382 /* include */,
+				B60C54181AFAB9AA0029E382 /* src */,
 			);
 			path = GWAsimulator_v2.0;
+			sourceTree = "<group>";
+		};
+		B60C54181AFAB9AA0029E382 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				84484A441AF92CB000DCB671 /* GWAsimulator.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		B60C54191AFAB9B70029E382 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				84484A4E1AF949C300DCB671 /* dataanalysis.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		B60C541A1AFAB9C70029E382 /* files */ = {
+			isa = PBXGroup;
+			children = (
+				84484A4D1AF9354800DCB671 /* control.dat */,
+				84484A481AF92EE300DCB671 /* diseasemodel.txt */,
+			);
+			name = files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				84484A451AF92CB000DCB671 /* GWAsimulator.cpp in Sources */,
-				84484A4F1AF949C300DCB671 /* dataanalysis.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
