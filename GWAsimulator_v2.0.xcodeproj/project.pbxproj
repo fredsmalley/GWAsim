@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		843BCAD11AFC025B0090E117 /* libgzstream.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 843BCAD01AFC025B0090E117 /* libgzstream.a */; };
 		84484A451AF92CB000DCB671 /* GWAsimulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84484A441AF92CB000DCB671 /* GWAsimulator.cpp */; };
 		84484A4C1AF9345400DCB671 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 84484A4B1AF9345400DCB671 /* makefile */; };
 		84484A4F1AF949C300DCB671 /* dataanalysis.h in Sources */ = {isa = PBXBuildFile; fileRef = 84484A4E1AF949C300DCB671 /* dataanalysis.h */; };
@@ -25,9 +26,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		843BCAD01AFC025B0090E117 /* libgzstream.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgzstream.a; sourceTree = "<group>"; };
+		843BCAD21AFC02630090E117 /* gzstream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gzstream.h; sourceTree = "<group>"; };
 		84484A141AF9220E00DCB671 /* GWAsimulator_v2.0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GWAsimulator_v2.0; sourceTree = BUILT_PRODUCTS_DIR; };
 		84484A441AF92CB000DCB671 /* GWAsimulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GWAsimulator.cpp; sourceTree = "<group>"; };
-		84484A461AF92CF200DCB671 /* Illumina300KCEU */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Illumina300KCEU; sourceTree = "<group>"; };
 		84484A471AF92ED700DCB671 /* build */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = build; sourceTree = "<group>"; };
 		84484A481AF92EE300DCB671 /* diseasemodel.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = diseasemodel.txt; sourceTree = "<group>"; };
 		84484A4B1AF9345400DCB671 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843BCAD11AFC025B0090E117 /* libgzstream.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +68,9 @@
 		84484A161AF9220E00DCB671 /* GWAsimulator_v2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				84484A461AF92CF200DCB671 /* Illumina300KCEU */,
 				84484A441AF92CB000DCB671 /* GWAsimulator.cpp */,
+				843BCAD21AFC02630090E117 /* gzstream.h */,
+				843BCAD01AFC025B0090E117 /* libgzstream.a */,
 				84484A4D1AF9354800DCB671 /* control.dat */,
 				84484A4E1AF949C300DCB671 /* dataanalysis.h */,
 				84484A481AF92EE300DCB671 /* diseasemodel.txt */,
@@ -221,6 +225,10 @@
 		84484A1C1AF9220E00DCB671 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GWAsimulator_v2.0",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -228,6 +236,10 @@
 		84484A1D1AF9220E00DCB671 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GWAsimulator_v2.0",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -251,6 +263,7 @@
 				84484A1D1AF9220E00DCB671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

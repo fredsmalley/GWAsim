@@ -15,6 +15,8 @@
 #include <cstdlib>
 #include <vector>
 #include <math.h>
+#include "gzstream.h"
+
 using namespace std;
 
 ////////////////////////////////////////////////////////////////////
