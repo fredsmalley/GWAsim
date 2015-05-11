@@ -178,16 +178,16 @@ void controlin(char *CONTFILE,
       exit(1);
     }
     
-    // detect any files named chr#.dat or chr#.dat.gz
+    // detect any files named chr#.trj or chr#.trj.gz
     for(i=0; i<23; i++) {
-      sprintf(testfilename, "chr%d.dat", i);
+      sprintf(testfilename, "chr%d.trj", i);
       testfile.open(testfilename);
       if(testfile.is_open()) {
         fileexist = 1;
         testfile.close();
         break;
       }
-      sprintf(testfilename, "chr%d.dat.gz", i);
+      sprintf(testfilename, "chr%d.trj.gz", i);
       testfile.open(testfilename);
       if(testfile.is_open()) {
         fileexist = 1;
@@ -196,7 +196,7 @@ void controlin(char *CONTFILE,
       }
     }
     if(fileexist) {
-      puts("\nWARNING:  Any files named chr#.dat or chr#.dat.gz will be removed.");
+      puts("\nWARNING:  Any files named chr#.trj or chr#.trj.gz will be removed.");
       puts("          If you don't want them removed, kill the current job immediately.\n");
     }
   }
@@ -1205,15 +1205,15 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
   int n_person = NUMCASEF + NUMCASEM + NUMCONTF + NUMCONTM;
   int n_hap = 2*(NUMCASEF + NUMCASEM + NUMCONTF + NUMCONTM);
   
-  // remove old chr#.dat or chr#.dat.gz files
+  // remove old chr#.trj or chr#.trj.gz files
   // This is useful especially for regional simulations to avoid having
   // files for chromosomes that are not simulated in the last run.
   for(i=0; i<23; i++) {
-    sprintf(testfilename, "chr%d.dat", Chr[i]);
+    sprintf(testfilename, "chr%d.trj", Chr[i]);
     testfile.open(testfilename);
     if(testfile.is_open()) {
       if(fileexist==0) {
-        puts("\nRemoving old data files chr#.dat or chr#.dat.gz");
+        puts("\nRemoving old data files chr#.trj or chr#.trj.gz");
         fileexist=1;
       }
       testfile.close();
@@ -1221,11 +1221,11 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
         cout<<"Remove operation failed for " << testfilename << endl;
     }
     
-    sprintf(testfilename, "chr%d.dat.gz", Chr[i]);
+    sprintf(testfilename, "chr%d.trj.gz", Chr[i]);
     testfile.open(testfilename);
     if(testfile.is_open()) {
       if(fileexist==0) {
-        puts("\nRemoving old data files chr#.dat or chr#.dat.gz");
+        puts("\nRemoving old data files chr#.trj or chr#.trj.gz");
         fileexist=1;
       }
       testfile.close();
@@ -1244,7 +1244,7 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
         startpos=Start[i]-1; endpos=End[i]-1;
       }
       
-      sprintf(outfilename, "chr%d.dat", Chr[i]);
+      sprintf(outfilename, "chr%d.trj", Chr[i]);
       outfile.open(outfilename);
       if(outfile.fail()){
         cout<< "Output file: "<< outfilename << " cannot be opened!";
