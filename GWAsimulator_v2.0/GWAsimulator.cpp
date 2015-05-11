@@ -826,9 +826,7 @@ void modelbuild(double PREV, int NUMDL, int DLPOS[], int DV[],
   strcat(diseasemodel, tmpstr);
   for(i=0; i<NUMDL; i++) {
     sprintf(tmpstr, "   %2d   %2d  %6d %6d   %1d  %6.4f  %6.3f  %6.3f   %6.4f  %6.4f\n",
-            i+1, Chr[i], numMarker[i], DLPOS[i], DV[i],
-            DV[i] ? freq[i][DLPOS[i]-1] : 1-freq[i][DLPOS[i]-1],
-            GRR[i], GRR2[i], beta1[i], beta2[i]);
+            i+1, Chr[i], numMarker[i], DLPOS[i], DV[i],DV[i] ? freq[i][DLPOS[i]-1] : 1-freq[i][DLPOS[i]-1], GRR[i], GRR2[i], beta1[i], beta2[i]);
     strcat(diseasemodel, tmpstr);
   }
   if(INTER) {
