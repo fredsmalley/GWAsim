@@ -64,9 +64,9 @@ void dataanalysis(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM)
   countMarker=0;
   for(i=0; i<7; i++){
     assoc_chisq(Chr[i], sim_hap[i], chisq+countMarker, numMarker[i], NUMCASEF, NUMCASEM, NUMCONTF, NUMCONTM);
-    cout << "numMarker " << numMarker[i] << endl;
+    //cout << "numMarker " << numMarker[i] << endl;
     countMarker += numMarker[i];
   }
 
-    for(i=0; i<NUMMARKERTOTAL; i++)  if (chisq[i] > 17) cout << i << " - " << chisq[i] << ";\n";
+    //for(i=0; i<NUMMARKERTOTAL; i++)  if (chisq[i] > 17) cout << i << " - " << chisq[i] << ";\n";
 }
