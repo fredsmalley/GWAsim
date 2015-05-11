@@ -1257,32 +1257,42 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
         puts("\nin Linkage\n");
         cout << "start " << startpos << " endpos " << endpos << endl;
         outfile << "TRAJECTORY_VER2.1" << endl;
-        outfile << n_person << " " << (endpos - startpos + 3) << " 0" << endl;
+        outfile << n_person << " " << ((endpos - startpos + 1) * 2 + 2) << " 0" << endl;
         outfile << "2 2 ";
         
         for(k=startpos; k<=endpos; k++)
-          outfile << "3 ";
+          outfile << "2 ";
+        
+        for(k=startpos; k<=endpos; k++)
+          outfile << "2 ";
         outfile.seekp((long)outfile.tellp() - 1); // Take off last space
         
         outfile << endl << endl;
         outfile << "disease " << "sex ";
         
         for(k=startpos; k<=endpos; k++)
-          outfile << "chr" << Chr[i] << "_" << k << " ";
+          outfile << "chr" << Chr[i] << "_" << k << "A " << "chr" << Chr[i] << "_" << k << "B ";
         outfile.seekp((long)outfile.tellp() - 1); // Take off last space
         
         outfile << endl;
-        outfile << "Yes " << "Yes ";
+        outfile << "No " << "Yes ";
+        
+        for(k=startpos; k<=endpos; k++)
+          outfile << "Yes ";
+        //outfile.seekp((long)outfile.tellp() - 1); // Take off last space
         
         for(k=startpos; k<=endpos; k++)
           outfile << "Yes ";
         outfile.seekp((long)outfile.tellp() - 1); // Take off last space
         
         outfile << endl;
-        outfile << "Yes " << "Yes ";
+        outfile << "Yes " << "No ";
         
         for(k=startpos; k<=endpos; k++)
-          outfile << "Yes ";
+          outfile << "No ";
+        
+        for(k=startpos; k<=endpos; k++)
+          outfile << "No ";
         outfile.seekp((long)outfile.tellp() - 1); // Take off last space
         
         outfile << endl;
@@ -1306,16 +1316,12 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
           else
             outfile << "0 ";
           
-          if ((status - 1) == 1)
-            outfile << "2 ";
-          else
-            outfile << "0 ";
-          
           //outfile << status - 1 << " " << sex - 1 << " ";
           // alleles:  0 -> "1", 1 -> "2"
-          for(k=startpos + 1; k<=endpos; k++){
+          for(k=startpos; k<=endpos; k++){
             count++;
-            //outfile << sim_hap[i][2*j][k] +1 << " " << sim_hap[i][2*j+1][k] +1 << " ";
+            outfile << sim_hap[i][2*j][k]  << " " << sim_hap[i][2*j+1][k]  << " ";
+            /*
             if (sim_hap[i][2*j][k] == 1 && sim_hap[i][2*j+1][k] == 1){
               outfile << "2 ";
             } else if (sim_hap[i][2*j][k] != 1 && sim_hap[i][2*j+1][k] == 1){
@@ -1325,6 +1331,7 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
             } else {
               outfile << "0 ";
             }
+             */
           }
           outfile.seekp((long)outfile.tellp() - 1); // Take off last space
           //cout << endl;
