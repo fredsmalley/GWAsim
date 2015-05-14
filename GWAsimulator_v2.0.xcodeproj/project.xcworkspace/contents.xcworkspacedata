@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:GWAsimulator_v2.0_mac">
-   </FileRef>
-   <FileRef
       location = "self:GWAsimulator_v2.0.xcodeproj">
    </FileRef>
 </Workspace>
