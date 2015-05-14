@@ -1,0 +1,16 @@
+Copyright by Chun Li and Mingyao Li
+
+
+The program is freely available and is provided as is.
+
+The source code is freely available for compilation and building into
+your analysis programs.  However, if you want to incorporate any part
+of the source code into distributed software (free or for fee), please
+contact the authors for permission.
+
+The program is maintained at
+http://biostat.mc.vanderbilt.edu/GWAsimulator
+
+The paper associated with the program is
+Li C, Li M (2007) GWAsimulator: A rapid whole genome simulation
+program. Bioinformatics (in press).

@@ -1,6 +1,3 @@
-#ifndef __DATAANALYSIS__GWAsimulator__
-#define __DATAANALYSIS__GWAsimulator__
-
 /////////////////////////////////////////////////////////////////////
 //
 //  Data analysis example function for GWAsimulator
@@ -65,13 +62,11 @@ void dataanalysis(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM)
   chisq=(double *)malloc(NUMMARKERTOTAL*sizeof(double));
 
   countMarker=0;
-  for(i=0; i<7; i++){
-    assoc_chisq(Chr[i], sim_hap[i], chisq+countMarker, numMarker[i], NUMCASEF, NUMCASEM, NUMCONTF, NUMCONTM);
-    cout << "numMarker " << numMarker[i] << endl;
+  for(i=0; i<23; i++){
+    assoc_chisq(Chr[i], sim_hap[i], chisq+countMarker, numMarker[i],
+		NUMCASEF, NUMCASEM, NUMCONTF, NUMCONTM);
     countMarker += numMarker[i];
   }
 
-    for(i=0; i<NUMMARKERTOTAL; i++)  if (chisq[i] > 17) cout << i << " - " << chisq[i] << ";\n";
+  //  for(i=900; i<1100; i++) cout << chisq[i] << "\n";
 }
-
-#endif

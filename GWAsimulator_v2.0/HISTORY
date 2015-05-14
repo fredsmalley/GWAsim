@@ -1,0 +1,79 @@
+Version history of GWAsimulator
+
+
+November 19, 2007:  Version 2.0 posted.
+
+1.  Added a feature that allows the effect of each disease locus to be
+    different from multiplicative.  This requires a format change of the
+    control file from previous versions.
+2.  Added a feature that allows the user to specify two-way
+    interaction effects between pairs of disease loci.
+3.  Fixed a bug (see below).
+4.  Added a check on the number of arguments in the command line.  If
+    it is not 2, a brief explanation of syntax is printed.
+5.  Added a copyright file.
+
+
+
+Bugs found in version 1.1:
+
+1.  When simulating the case genotypes at disease loci, an indexing
+    error (due to a coding typo) caused all case genotypes at diseaes
+    loci to be 0/0.
+
+
+November 15, 2007:  Paper published online.
+October 29, 2007:  Paper accepted by Bioinformatics.
+
+
+October 10, 2007:  Version 1.1 minor modifications.
+
+1.  Added file detection for existent chr#.dat and chr#.dat.gz when
+    the data output option is used.  If any such file exists, the
+    program prints out a warning message about removing these files.
+2.  Added more discussions in the Properties and Limitations section
+    of the program manual.
+3.  Provided supplementary materials on the program web site. (1)
+    Evaluation of simulated data using LDU maps.  (2) Comparison with
+    results from the program hapgen.
+
+
+September 21, 2007:  Version 1.1 posted.
+
+1.  Fixed bugs (see below) and added more error checks.
+2.  Added a feature to allow a disease locus on X chromosome.
+3.  Added a feature to allow simulation of chromosomal regions.
+4.  Revised the program manual to reflect the new features and to
+    include more details.
+5.  Compiled all executables using g++ 3.4 or later.
+6.  Included a universal executable file for MacOS.
+7.  Included this history file.
+8.  Provided example input files for HumanHap300 and HumanHap550 on
+    program web site.
+
+
+
+Bugs found in version 1.0:
+
+1.  When calculating the cummulative conditional probabilities in function
+    cum_disease_geno(), the formula for control probabilities were wrong.
+    The correct formula should have /(1-PREV) at the end instead of /PREV.
+2.  For non-disease chromosomes, starting locus genotype frequencies
+    were flipped for the two alleles and were wrong for X for males
+    (function sample_start_marker()).
+3.  In file output:
+    linkage option:  first female control would be output as a male control
+    genotype option:  X genotypes for males would be 0 or 1, not 0 or 2
+
+
+July 25, 2007:  Version 1.0 minor modifications.
+
+1.  Corrected typos in Illumina300KCEU/README.
+2.  Changed the file compression command in data output function from
+    "/bin/rm -f %s.gz; gzip %s" to "gzip -f %s".
+3.  Added to the Windows version three new files for the gzip function:
+    gzip.exe, copygzip.bat, README.txt
+
+
+July 18, 2007:  Version 1.0 posted and paper submitted to Bioinformatics.
+http://biostat.mc.vanderbilt.edu/GWAsimulator
