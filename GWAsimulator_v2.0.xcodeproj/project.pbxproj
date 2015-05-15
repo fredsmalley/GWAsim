@@ -13,6 +13,16 @@
 		84484A4F1AF949C300DCB671 /* dataanalysis.h in Sources */ = {isa = PBXBuildFile; fileRef = 84484A4E1AF949C300DCB671 /* dataanalysis.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		841700431B056771004529EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8417003F1B056770004529EB /* GLNV5_May_20_2014.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 841700351B056770004529EB;
+			remoteInfo = GLNV5_May_20_2014;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		84484A121AF9220E00DCB671 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -26,6 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8417003F1B056770004529EB /* GLNV5_May_20_2014.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLNV5_May_20_2014.xcodeproj; path = GLNV5_May_20_2014/GLNV5_May_20_2014/GLNV5_May_20_2014.xcodeproj; sourceTree = "<group>"; };
 		8436322E1B0133300004D791 /* GWAsimulator_v2.0.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = GWAsimulator_v2.0.pdf; sourceTree = "<group>"; };
 		843632311B0162630004D791 /* diseasemodel.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = diseasemodel.txt; sourceTree = "<group>"; };
 		843BCAD01AFC025B0090E117 /* libgzstream.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgzstream.a; sourceTree = "<group>"; };
@@ -50,9 +61,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		841700401B056770004529EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				841700441B056771004529EB /* GLNV5_May_20_2014 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		84484A0B1AF9220E00DCB671 = {
 			isa = PBXGroup;
 			children = (
+				8417003F1B056770004529EB /* GLNV5_May_20_2014.xcodeproj */,
 				843BCAD31AFC19660090E117 /* control.dat */,
 				843632311B0162630004D791 /* diseasemodel.txt */,
 				84484A161AF9220E00DCB671 /* GWAsimulator_v2.0 */,
@@ -126,12 +146,28 @@
 			mainGroup = 84484A0B1AF9220E00DCB671;
 			productRefGroup = 84484A151AF9220E00DCB671 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 841700401B056770004529EB /* Products */;
+					ProjectRef = 8417003F1B056770004529EB /* GLNV5_May_20_2014.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				84484A131AF9220E00DCB671 /* GWAsimulator_v2.0 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		841700441B056771004529EB /* GLNV5_May_20_2014 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = GLNV5_May_20_2014;
+			remoteRef = 841700431B056771004529EB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84484A101AF9220E00DCB671 /* Sources */ = {
