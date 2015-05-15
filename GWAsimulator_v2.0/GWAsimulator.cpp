@@ -1316,11 +1316,12 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
                sex = (j < NUMCASEF | (j >= step2 & j < step3)) + 1;
                // affection status:  0=unknown, 1=unaffected, 2=affected
                // for population sampling, all subjects' status is 0
-               //status = (NUMDL>0) ? (j < (NUMCASEF + NUMCASEM)) : 0;
+               status = (NUMDL>0) ? (j < (NUMCASEF + NUMCASEM)) : 0;
                //printf("min max : %d   %d\n", startpos, endpos);
                //printf("mk pos = %d\n",  mkPOS[i]);
                //cout << (sim_hap[i][2*j][mkPOS[i]] ? 1 : 0 ) << endl;
                //cout << (sim_hap[i][2*j+1][mkPOS[i]] ? 1 : 0 ) << endl;               //cout << sim_hap[i][2*j+1][mkPOS[i]] << endl;               //
+               /*
                int odds = 0;
                status = 0;
                
@@ -1337,7 +1338,7 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
                      status = 1;
                }
                
-               
+               */
                //printf("does person %d have it %d . data NUMCASEF = %d , + , NUMCASEM = %d\n", j, (j < NUMCASEF + NUMCASEM), NUMCASEF, NUMCASEM);
                //outfile << j+1 << " 1 0 0 " << sex << " " << status << " ";
                outfile << endl << "1" << endl;
@@ -1423,7 +1424,17 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
          std::system(command);
          } else {
             cout << "A command processor is not available.\n";
-         }      }
+         }
+         
+         sprintf(testfilename, "GLNV5_May_20_2014/chr%d.trj", Chr[i]);
+         sprintf(command, "mv -f %s %s", outfilename, testfilename);
+         if (std::system(0)) {
+            // A command processor is available.
+            std::system(command);
+         } else {
+            cout << "A command processor is not available.\n";
+         }
+      }
    }
 }
 
