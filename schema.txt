@@ -1,0 +1,6 @@
+GWAs arguments:
+   control.dat 7845412
+
+
+GLN arguments:
+   -M estimation -R chr6.trj -g 1 -p 1 -X out -J 0 -K 0 -P 5 -A 0.9 -O out/outputGLN.txt
