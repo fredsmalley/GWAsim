@@ -102,7 +102,7 @@ float ran1(long *idum)
   k=(*idum)/IQ; 
   *idum=IA*(*idum-k*IQ)-IR*k; 
   if (*idum < 0) *idum += IM;
-  j=iy/NDIV; 
+  j= (int) iy/NDIV;
   iy=iv[j]; 
   iv[j] = *idum;
   if ((temp=AM*iy) > RNMX) return RNMX; 
@@ -281,7 +281,7 @@ void controlin(char *CONTFILE,
   if(NUMDL>0) {
     // disease model prevalence
     getline(controlfile, line);
-    sscanf(line.c_str(), "%s", &tmp);
+    sscanf(line.c_str(), "%s", tmp);
     PREV=atof(tmp);
     printf("Number of disease variants:     %d\n", NUMDL);
     printf("Disease model prevalence:       %6.4f\n", PREV);
@@ -301,7 +301,7 @@ void controlin(char *CONTFILE,
       // reading in a line of parameters for a disease locus
       getline(controlfile, line);
       sscanf(line.c_str(), "%d%d%d%s%s%d%d", &Chr[i], &DLPOS[i], &DV[i],
-	     &tmp, &tmp2, &Start[i], &End[i]);
+	     tmp, tmp2, &Start[i], &End[i]);
       GRR[i]=atof(tmp);
 
       // if multiplicative effect, then define GRR2=GRR*GRR
@@ -371,7 +371,7 @@ void controlin(char *CONTFILE,
       // reading in a line of parameters
       getline(controlfile, line);
       nfield = sscanf(line.c_str(), "%s%s%s%s%s%s%s",
-		      &tmp, &t1,&t2,&t3,&t4,&t5,&t6);
+		      tmp, t1,t2,t3,t4,t5,t6);
       if(nfield < 1) break;
 
       // if the first word is "Inter2", process the rest of the line
@@ -709,7 +709,7 @@ void modelbuild(double PREV, int NUMDL, int DLPOS[], int DV[],
 		double *GRR, double *GRR2, int INTER, int NUMI2)
 {
   int i, j, g[23], idx1, idx2;
-  double pi, ri1, ri2, expai, p[23], b0hi, b0lo, b0tmp, aa;
+  double pi, ri1, ri2, expai=0.0, p[23], b0hi, b0lo, b0tmp, aa;
   double tmpbeta1, tmpbeta2, eff11, eff12, eff21, eff22;
   double beta0;                  // intercept in the logit penetrance model
   double beta1[23], beta2[23];   // coefficients in the logit penetrance model
@@ -847,7 +847,7 @@ void modelbuild(double PREV, int NUMDL, int DLPOS[], int DV[],
   if( (modelout = fopen("diseasemodel.txt", "w")) == NULL) {
     printf("Cannot output to diseasemodel.txt.");
   } else {
-    fprintf(modelout, diseasemodel);
+    fputs(diseasemodel, modelout);
   }
   fclose(modelout);
 
@@ -878,7 +878,7 @@ void sample_disease_markers(int NUMDL,
   int step3 = step2 + NUMCONTF;
   int n_person = NUMCASEF + NUMCASEM + NUMCONTF + NUMCONTM;
   int n_hap = 2*n_person;
-  int n_sample, dd[23], index, allele1, allele2, i, j, k, id;
+  int n_sample, dd[23], index = 0, allele1, allele2, i, j, k, id;
   double p_rand;
 
   // simulate genotypes for case females
@@ -1071,7 +1071,7 @@ void sample_hap(bit_vector sim_hap[], // simulated haplotypes
 		int n_sample
                 )
 {
-  int i, j, k, id;
+  int i, j, id;
 
   // ->genome end
   for (j=markerPos+(WINDOW_SIZE-1)/2+1; j<=endpos; j++) {
@@ -1109,13 +1109,9 @@ void simulate(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
 	      int NUMDL, int REGIONAL, int DLPOS[], int WINDOW_SIZE,
 	      int NUMCHROM, int NUMCHROM_X)
 {
-  int i, j, k, markerPos, countMarker=0, xx;
+  int i, j, k, markerPos, xx = 0;
   int simPerson=NUMCASEF+NUMCASEM+NUMCONTF+NUMCONTM;
   int mkpos[23];
-
-  int numPerson; // 60 for autosomal chromosomes, 45 for X chromosome
-  int n_sample;
-  int IsXchr;    // 1: X chromosome, 0: autosomal chromosomes
 
   for(i=0; i<23; i++) {
     for(j=0; j<2*simPerson; j++) sim_hap[i][j].reserve(numMarker[i]);
@@ -1253,7 +1249,7 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
       if(!strcmp(OUTFORMAT, "linkage")) {
 	for(j=0; j<n_person; j++) {
 	  // sex:  1=male, 2=female
-	  sex = (j < NUMCASEF | (j >= step2 & j < step3)) + 1;
+	  sex = ((j < NUMCASEF) | (j >= step2 & j < step3)) + 1;
 	  // affection status:  0=unknown, 1=unaffected, 2=affected
 	  // for population sampling, all subjects' status is 0
 	  status = (NUMDL>0) ? (j < NUMCASEF + NUMCASEM) + 1 : 0;
@@ -1278,7 +1274,7 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
 	} else {
 	  // for X: female genotype=0,1,2, male genotype=0,2
 	  for(j=0; j<n_person; j++) {
-	    if(j < NUMCASEF | (j >= step2 & j < step3)) {
+	    if((j < NUMCASEF) | (j >= step2 & j < step3)) {
 	      for(k=startpos; k<=endpos; k++)
 		outfile << sim_hap[i][2*j][k] + sim_hap[i][2*j+1][k] << " ";
 	    } else {
@@ -1301,7 +1297,7 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
 
       outfile.close();
 
-      sprintf(command, "gzip -f %s", outfilename, outfilename);
+      sprintf(command, "gzip -f %s", outfilename);
       if (std::system(0)) {
 	// A command processor is available.
 	std::system(command);
@@ -1318,7 +1314,7 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
 //    Uncomment the following line if you want to test the example
 //    analysis function included in the software distribution.
 ///////////////////////////////////////////////////////////////////
-//#include "dataanalysis.cpp"
+//#include "dataanalysis.h"
 
 
 ////////////////////////////////////////////////

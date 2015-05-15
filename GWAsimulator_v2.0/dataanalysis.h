@@ -1,3 +1,5 @@
+#ifndef __dataanalysis__GWAsimulator__
+#define __dataanalysis__GWAsimulator__
 /////////////////////////////////////////////////////////////////////
 //
 //  Data analysis example function for GWAsimulator
@@ -70,3 +72,5 @@ void dataanalysis(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM)
 
   //  for(i=900; i<1100; i++) cout << chisq[i] << "\n";
 }
+
+#endif

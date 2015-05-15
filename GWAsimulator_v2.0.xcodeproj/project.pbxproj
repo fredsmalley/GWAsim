@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84484A451AF92CB000DCB671 /* GWAsimulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84484A441AF92CB000DCB671 /* GWAsimulator.cpp */; };
+		B6579DA01B056C47008B8EC5 /* GWAsimulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6579D831B056C47008B8EC5 /* GWAsimulator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,11 +24,38 @@
 
 /* Begin PBXFileReference section */
 		84484A141AF9220E00DCB671 /* GWAsimulator_v2.0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GWAsimulator_v2.0; sourceTree = BUILT_PRODUCTS_DIR; };
-		84484A441AF92CB000DCB671 /* GWAsimulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GWAsimulator.cpp; sourceTree = "<group>"; };
-		84484A461AF92CF200DCB671 /* Illumina300KCEU */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Illumina300KCEU; sourceTree = "<group>"; };
-		84484A481AF92EE300DCB671 /* diseasemodel.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = diseasemodel.txt; sourceTree = "<group>"; };
-		84484A4D1AF9354800DCB671 /* control.dat */ = {isa = PBXFileReference; lastKnownFileType = text; path = control.dat; sourceTree = "<group>"; };
-		84484A4E1AF949C300DCB671 /* dataanalysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataanalysis.h; sourceTree = "<group>"; };
+		B6579D7D1B056C47008B8EC5 /* build */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = build; sourceTree = "<group>"; };
+		B6579D7E1B056C47008B8EC5 /* control.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control.dat; sourceTree = "<group>"; };
+		B6579D7F1B056C47008B8EC5 /* COPYRIGHT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		B6579D801B056C47008B8EC5 /* dataanalysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataanalysis.h; sourceTree = "<group>"; };
+		B6579D811B056C47008B8EC5 /* diseasemodel.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = diseasemodel.txt; sourceTree = "<group>"; };
+		B6579D831B056C47008B8EC5 /* GWAsimulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GWAsimulator.cpp; sourceTree = "<group>"; };
+		B6579D841B056C47008B8EC5 /* GWAsimulator_v2.0.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = GWAsimulator_v2.0.pdf; sourceTree = "<group>"; };
+		B6579D851B056C47008B8EC5 /* HISTORY */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HISTORY; sourceTree = "<group>"; };
+		B6579D871B056C47008B8EC5 /* chr10_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr10_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D881B056C47008B8EC5 /* chr11_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr11_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D891B056C47008B8EC5 /* chr12_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr12_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D8A1B056C47008B8EC5 /* chr13_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr13_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D8B1B056C47008B8EC5 /* chr14_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr14_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D8C1B056C47008B8EC5 /* chr15_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr15_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D8D1B056C47008B8EC5 /* chr16_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr16_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D8E1B056C47008B8EC5 /* chr17_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr17_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D8F1B056C47008B8EC5 /* chr18_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr18_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D901B056C47008B8EC5 /* chr19_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr19_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D911B056C47008B8EC5 /* chr1_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr1_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D921B056C47008B8EC5 /* chr20_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr20_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D931B056C47008B8EC5 /* chr21_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr21_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D941B056C47008B8EC5 /* chr22_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr22_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D951B056C47008B8EC5 /* chr23_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr23_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D961B056C47008B8EC5 /* chr2_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr2_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D971B056C47008B8EC5 /* chr3_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr3_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D981B056C47008B8EC5 /* chr4_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr4_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D991B056C47008B8EC5 /* chr5_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr5_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D9A1B056C47008B8EC5 /* chr6_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr6_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D9B1B056C47008B8EC5 /* chr7_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr7_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D9C1B056C47008B8EC5 /* chr8_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr8_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D9D1B056C47008B8EC5 /* chr9_Illu300k.phased */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chr9_Illu300k.phased; sourceTree = "<group>"; };
+		B6579D9E1B056C47008B8EC5 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +72,7 @@
 		84484A0B1AF9220E00DCB671 = {
 			isa = PBXGroup;
 			children = (
-				84484A161AF9220E00DCB671 /* GWAsimulator_v2.0 */,
+				B6579D7C1B056C47008B8EC5 /* GWAsimulator_v2.0 */,
 				84484A151AF9220E00DCB671 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,40 +85,59 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		84484A161AF9220E00DCB671 /* GWAsimulator_v2.0 */ = {
+		B6579D7C1B056C47008B8EC5 /* GWAsimulator_v2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				84484A461AF92CF200DCB671 /* Illumina300KCEU */,
-				B60C541A1AFAB9C70029E382 /* files */,
-				B60C54191AFAB9B70029E382 /* include */,
-				B60C54181AFAB9AA0029E382 /* src */,
+				B6579DA11B056C72008B8EC5 /* Files */,
+				B6579D801B056C47008B8EC5 /* dataanalysis.h */,
+				B6579D831B056C47008B8EC5 /* GWAsimulator.cpp */,
+				B6579D861B056C47008B8EC5 /* Illumina300KCEU */,
 			);
 			path = GWAsimulator_v2.0;
 			sourceTree = "<group>";
 		};
-		B60C54181AFAB9AA0029E382 /* src */ = {
+		B6579D861B056C47008B8EC5 /* Illumina300KCEU */ = {
 			isa = PBXGroup;
 			children = (
-				84484A441AF92CB000DCB671 /* GWAsimulator.cpp */,
+				B6579D871B056C47008B8EC5 /* chr10_Illu300k.phased */,
+				B6579D881B056C47008B8EC5 /* chr11_Illu300k.phased */,
+				B6579D891B056C47008B8EC5 /* chr12_Illu300k.phased */,
+				B6579D8A1B056C47008B8EC5 /* chr13_Illu300k.phased */,
+				B6579D8B1B056C47008B8EC5 /* chr14_Illu300k.phased */,
+				B6579D8C1B056C47008B8EC5 /* chr15_Illu300k.phased */,
+				B6579D8D1B056C47008B8EC5 /* chr16_Illu300k.phased */,
+				B6579D8E1B056C47008B8EC5 /* chr17_Illu300k.phased */,
+				B6579D8F1B056C47008B8EC5 /* chr18_Illu300k.phased */,
+				B6579D901B056C47008B8EC5 /* chr19_Illu300k.phased */,
+				B6579D911B056C47008B8EC5 /* chr1_Illu300k.phased */,
+				B6579D921B056C47008B8EC5 /* chr20_Illu300k.phased */,
+				B6579D931B056C47008B8EC5 /* chr21_Illu300k.phased */,
+				B6579D941B056C47008B8EC5 /* chr22_Illu300k.phased */,
+				B6579D951B056C47008B8EC5 /* chr23_Illu300k.phased */,
+				B6579D961B056C47008B8EC5 /* chr2_Illu300k.phased */,
+				B6579D971B056C47008B8EC5 /* chr3_Illu300k.phased */,
+				B6579D981B056C47008B8EC5 /* chr4_Illu300k.phased */,
+				B6579D991B056C47008B8EC5 /* chr5_Illu300k.phased */,
+				B6579D9A1B056C47008B8EC5 /* chr6_Illu300k.phased */,
+				B6579D9B1B056C47008B8EC5 /* chr7_Illu300k.phased */,
+				B6579D9C1B056C47008B8EC5 /* chr8_Illu300k.phased */,
+				B6579D9D1B056C47008B8EC5 /* chr9_Illu300k.phased */,
+				B6579D9E1B056C47008B8EC5 /* README */,
 			);
-			name = src;
+			path = Illumina300KCEU;
 			sourceTree = "<group>";
 		};
-		B60C54191AFAB9B70029E382 /* include */ = {
+		B6579DA11B056C72008B8EC5 /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				84484A4E1AF949C300DCB671 /* dataanalysis.h */,
+				B6579D7D1B056C47008B8EC5 /* build */,
+				B6579D7E1B056C47008B8EC5 /* control.dat */,
+				B6579D7F1B056C47008B8EC5 /* COPYRIGHT */,
+				B6579D811B056C47008B8EC5 /* diseasemodel.txt */,
+				B6579D841B056C47008B8EC5 /* GWAsimulator_v2.0.pdf */,
+				B6579D851B056C47008B8EC5 /* HISTORY */,
 			);
-			name = include;
-			sourceTree = "<group>";
-		};
-		B60C541A1AFAB9C70029E382 /* files */ = {
-			isa = PBXGroup;
-			children = (
-				84484A4D1AF9354800DCB671 /* control.dat */,
-				84484A481AF92EE300DCB671 /* diseasemodel.txt */,
-			);
-			name = files;
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84484A451AF92CB000DCB671 /* GWAsimulator.cpp in Sources */,
+				B6579DA01B056C47008B8EC5 /* GWAsimulator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
