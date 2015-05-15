@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		841700391B056770004529EB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700381B056770004529EB /* main.cpp */; };
+		841700D81B056953004529EB /* AdjustPvalue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700481B056953004529EB /* AdjustPvalue.cpp */; };
+		841700D91B056953004529EB /* binom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700491B056953004529EB /* binom.cpp */; };
+		841700DA1B056953004529EB /* ChisqDirTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8417004A1B056953004529EB /* ChisqDirTest.cpp */; };
+		841700DB1B056953004529EB /* ChisqTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8417004B1B056953004529EB /* ChisqTests.cpp */; };
+		841700DC1B056953004529EB /* ComparativeChisq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700571B056953004529EB /* ComparativeChisq.cpp */; };
+		841700DD1B056953004529EB /* CompareChisq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700591B056953004529EB /* CompareChisq.cpp */; };
+		841700DE1B056953004529EB /* ComparePathways.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8417005A1B056953004529EB /* ComparePathways.cpp */; };
+		841700DF1B056953004529EB /* ConditionalAssociation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8417005B1B056953004529EB /* ConditionalAssociation.cpp */; };
+		841700E71B056953004529EB /* effective_dim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8417006C1B056953004529EB /* effective_dim.cpp */; };
+		841700E81B056953004529EB /* EMTFisherTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8417006E1B056953004529EB /* EMTFisherTests.cpp */; };
+		841700E91B056953004529EB /* EnumMethod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700701B056953004529EB /* EnumMethod.cpp */; };
+		841700EA1B056953004529EB /* EnvGLNCmp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700721B056953004529EB /* EnvGLNCmp.cpp */; };
+		841700EB1B056953004529EB /* EnvGLNCmpIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700741B056953004529EB /* EnvGLNCmpIO.cpp */; };
+		841700EC1B056953004529EB /* EnvGLNCmpParentSets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700751B056953004529EB /* EnvGLNCmpParentSets.cpp */; };
+		841700ED1B056953004529EB /* EnvGLNRec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700761B056953004529EB /* EnvGLNRec.cpp */; };
+		841700EE1B056953004529EB /* EnvGLNRecIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700781B056953004529EB /* EnvGLNRecIO.cpp */; };
+		841700EF1B056953004529EB /* EnvGLNRecParentSets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700791B056953004529EB /* EnvGLNRecParentSets.cpp */; };
+		841700F01B056953004529EB /* ExactCPChisq2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8417007A1B056953004529EB /* ExactCPChisq2.cpp */; };
+		841700F11B056953004529EB /* ExactCPChisq3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8417007B1B056953004529EB /* ExactCPChisq3.cpp */; };
+		841700F21B056953004529EB /* ExactCPChisqTesting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8417007D1B056953004529EB /* ExactCPChisqTesting.cpp */; };
+		841700F31B056953004529EB /* ExactFunctionalTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8417007E1B056953004529EB /* ExactFunctionalTest.cpp */; };
+		841700F41B056953004529EB /* ExactMultiTableTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700801B056953004529EB /* ExactMultiTableTest.cpp */; };
+		841700F51B056953004529EB /* fexact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700831B056953004529EB /* fexact.cpp */; };
+		841700F81B056953004529EB /* GeneralizedTruthTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700861B056953004529EB /* GeneralizedTruthTable.cpp */; };
+		841700F91B056953004529EB /* getopt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700881B056953004529EB /* getopt.cpp */; };
+		841700FA1B056953004529EB /* GLN_evaluate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8417008A1B056953004529EB /* GLN_evaluate.cpp */; };
+		841700FB1B056953004529EB /* GLN_generate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8417008B1B056953004529EB /* GLN_generate.cpp */; };
+		841700FC1B056953004529EB /* GLN_IO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8417008C1B056953004529EB /* GLN_IO.cpp */; };
+		841700FD1B056953004529EB /* GLN_manpage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8417008D1B056953004529EB /* GLN_manpage.cpp */; };
+		841700FE1B056953004529EB /* GLN_simulate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8417008F1B056953004529EB /* GLN_simulate.cpp */; };
+		841700FF1B056953004529EB /* GLN_Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700901B056953004529EB /* GLN_Test.cpp */; };
+		841701001B056953004529EB /* GLN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700921B056953004529EB /* GLN.cpp */; };
+		841701011B056953004529EB /* GLNAlcohol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700941B056953004529EB /* GLNAlcohol.cpp */; };
+		841701021B056953004529EB /* GLNCompare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700951B056953004529EB /* GLNCompare.cpp */; };
+		841701031B056953004529EB /* GLNPureReconstruction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700981B056953004529EB /* GLNPureReconstruction.cpp */; };
+		841701041B056953004529EB /* GLNReconstruct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700991B056953004529EB /* GLNReconstruct.cpp */; };
+		841701051B056953004529EB /* InteractionEvaluationController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8417009D1B056953004529EB /* InteractionEvaluationController.cpp */; };
+		841701061B056953004529EB /* JobGLN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700A11B056953004529EB /* JobGLN.cpp */; };
+		841701071B056953004529EB /* JobResultCmp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700A41B056953004529EB /* JobResultCmp.cpp */; };
+		841701081B056953004529EB /* JobResultRec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700A61B056953004529EB /* JobResultRec.cpp */; };
+		8417010D1B056953004529EB /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 841700B01B056953004529EB /* Makefile */; };
+		8417010E1B056953004529EB /* MultinomialExactTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700B11B056953004529EB /* MultinomialExactTest.cpp */; };
+		8417010F1B056953004529EB /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700B31B056953004529EB /* Node.cpp */; };
+		841701101B056953004529EB /* PathwayStats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700BB1B056953004529EB /* PathwayStats.cpp */; };
+		841701111B056953004529EB /* PermStatTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700BD1B056953004529EB /* PermStatTable.cpp */; };
+		841701121B056953004529EB /* ResampleGLN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700BF1B056953004529EB /* ResampleGLN.cpp */; };
+		841701131B056953004529EB /* ResampleTCF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700C01B056953004529EB /* ResampleTCF.cpp */; };
+		841701141B056953004529EB /* RunMPIJobs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700C11B056953004529EB /* RunMPIJobs.cpp */; };
+		841701151B056953004529EB /* RunSPJobs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700C21B056953004529EB /* RunSPJobs.cpp */; };
+		841701161B056953004529EB /* SetOps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700C31B056953004529EB /* SetOps.cpp */; };
+		841701171B056953004529EB /* StatDistributions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700C51B056953004529EB /* StatDistributions.cpp */; };
+		841701181B056953004529EB /* sum_chisqs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700C71B056953004529EB /* sum_chisqs.cpp */; };
+		841701191B056953004529EB /* Topology.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700C81B056953004529EB /* Topology.cpp */; };
+		8417011A1B056953004529EB /* TrajectoryCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700CD1B056953004529EB /* TrajectoryCollection.cpp */; };
+		8417011B1B056953004529EB /* TrajectoryCollectionIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700CF1B056953004529EB /* TrajectoryCollectionIO.cpp */; };
+		8417011C1B056953004529EB /* Transition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700D01B056953004529EB /* Transition.cpp */; };
+		8417011D1B056953004529EB /* TransitionTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700D21B056953004529EB /* TransitionTable.cpp */; };
+		8417011E1B056953004529EB /* TransitionTableIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841700D41B056953004529EB /* TransitionTableIO.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		841700331B056770004529EB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		841700351B056770004529EB /* GLNV5_May_20_2014 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GLNV5_May_20_2014; sourceTree = BUILT_PRODUCTS_DIR; };
+		841700381B056770004529EB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		841700451B056953004529EB /* -A */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "-A"; path = "../../-A"; sourceTree = "<group>"; };
+		841700461B056953004529EB /* -zSummarizedResults.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "-zSummarizedResults.txt"; path = "../../-zSummarizedResults.txt"; sourceTree = "<group>"; };
+		841700471B056953004529EB /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; name = .DS_Store; path = ../../.DS_Store; sourceTree = "<group>"; };
+		841700481B056953004529EB /* AdjustPvalue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AdjustPvalue.cpp; path = ../../AdjustPvalue.cpp; sourceTree = "<group>"; };
+		841700491B056953004529EB /* binom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = binom.cpp; path = ../../binom.cpp; sourceTree = "<group>"; };
+		8417004A1B056953004529EB /* ChisqDirTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ChisqDirTest.cpp; path = ../../ChisqDirTest.cpp; sourceTree = "<group>"; };
+		8417004B1B056953004529EB /* ChisqTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ChisqTests.cpp; path = ../../ChisqTests.cpp; sourceTree = "<group>"; };
+		8417004C1B056953004529EB /* ChisqTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChisqTests.h; path = ../../ChisqTests.h; sourceTree = "<group>"; };
+		8417004D1B056953004529EB /* chr2-runlog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "chr2-runlog.txt"; path = "../../chr2-runlog.txt"; sourceTree = "<group>"; };
+		8417004E1B056953004529EB /* chr2.trj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = chr2.trj; path = ../../chr2.trj; sourceTree = "<group>"; };
+		8417004F1B056953004529EB /* chr6-runlog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "chr6-runlog.txt"; path = "../../chr6-runlog.txt"; sourceTree = "<group>"; };
+		841700501B056953004529EB /* chr6.trj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = chr6.trj; path = ../../chr6.trj; sourceTree = "<group>"; };
+		841700511B056953004529EB /* chr11-runlog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "chr11-runlog.txt"; path = "../../chr11-runlog.txt"; sourceTree = "<group>"; };
+		841700521B056953004529EB /* chr11.trj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = chr11.trj; path = ../../chr11.trj; sourceTree = "<group>"; };
+		841700531B056953004529EB /* chr18.trj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = chr18.trj; path = ../../chr18.trj; sourceTree = "<group>"; };
+		841700541B056953004529EB /* chr19.trj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = chr19.trj; path = ../../chr19.trj; sourceTree = "<group>"; };
+		841700551B056953004529EB /* chr20.trj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = chr20.trj; path = ../../chr20.trj; sourceTree = "<group>"; };
+		841700561B056953004529EB /* chr23.trj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = chr23.trj; path = ../../chr23.trj; sourceTree = "<group>"; };
+		841700571B056953004529EB /* ComparativeChisq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ComparativeChisq.cpp; path = ../../ComparativeChisq.cpp; sourceTree = "<group>"; };
+		841700581B056953004529EB /* ComparativeChisq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComparativeChisq.h; path = ../../ComparativeChisq.h; sourceTree = "<group>"; };
+		841700591B056953004529EB /* CompareChisq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CompareChisq.cpp; path = ../../CompareChisq.cpp; sourceTree = "<group>"; };
+		8417005A1B056953004529EB /* ComparePathways.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ComparePathways.cpp; path = ../../ComparePathways.cpp; sourceTree = "<group>"; };
+		8417005B1B056953004529EB /* ConditionalAssociation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ConditionalAssociation.cpp; path = ../../ConditionalAssociation.cpp; sourceTree = "<group>"; };
+		8417005C1B056953004529EB /* ConditionalAssociation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConditionalAssociation.h; path = ../../ConditionalAssociation.h; sourceTree = "<group>"; };
+		8417005D1B056953004529EB /* diff.dot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = diff.dot; path = ../../diff.dot; sourceTree = "<group>"; };
+		8417005E1B056953004529EB /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = doc; path = ../../doc; sourceTree = "<group>"; };
+		8417005F1B056953004529EB /* DS_AdjacencyList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DS_AdjacencyList.cpp; path = ../../DS_AdjacencyList.cpp; sourceTree = "<group>"; };
+		841700601B056953004529EB /* DS_AdjacencyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DS_AdjacencyList.h; path = ../../DS_AdjacencyList.h; sourceTree = "<group>"; };
+		841700611B056953004529EB /* DS_CompulsiveParents.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DS_CompulsiveParents.cpp; path = ../../DS_CompulsiveParents.cpp; sourceTree = "<group>"; };
+		841700621B056953004529EB /* DS_CompulsiveParents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DS_CompulsiveParents.h; path = ../../DS_CompulsiveParents.h; sourceTree = "<group>"; };
+		841700631B056953004529EB /* DS_ConstraintFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DS_ConstraintFile.cpp; path = ../../DS_ConstraintFile.cpp; sourceTree = "<group>"; };
+		841700641B056953004529EB /* DS_ConstraintFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DS_ConstraintFile.h; path = ../../DS_ConstraintFile.h; sourceTree = "<group>"; };
+		841700651B056953004529EB /* DS_LocalConstraint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DS_LocalConstraint.cpp; path = ../../DS_LocalConstraint.cpp; sourceTree = "<group>"; };
+		841700661B056953004529EB /* DS_LocalConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DS_LocalConstraint.h; path = ../../DS_LocalConstraint.h; sourceTree = "<group>"; };
+		841700671B056953004529EB /* DS_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DS_main.cpp; path = ../../DS_main.cpp; sourceTree = "<group>"; };
+		841700681B056953004529EB /* EffCGLN_DynamicPattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EffCGLN_DynamicPattern.cpp; path = ../../EffCGLN_DynamicPattern.cpp; sourceTree = "<group>"; };
+		841700691B056953004529EB /* EffCGLN_DynamicPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EffCGLN_DynamicPattern.h; path = ../../EffCGLN_DynamicPattern.h; sourceTree = "<group>"; };
+		8417006A1B056953004529EB /* EffCGLN_GlobalConstraint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EffCGLN_GlobalConstraint.cpp; path = ../../EffCGLN_GlobalConstraint.cpp; sourceTree = "<group>"; };
+		8417006B1B056953004529EB /* EffCGLN_GlobalConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EffCGLN_GlobalConstraint.h; path = ../../EffCGLN_GlobalConstraint.h; sourceTree = "<group>"; };
+		8417006C1B056953004529EB /* effective_dim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = effective_dim.cpp; path = ../../effective_dim.cpp; sourceTree = "<group>"; };
+		8417006D1B056953004529EB /* eigen_sym.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eigen_sym.h; path = ../../eigen_sym.h; sourceTree = "<group>"; };
+		8417006E1B056953004529EB /* EMTFisherTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EMTFisherTests.cpp; path = ../../EMTFisherTests.cpp; sourceTree = "<group>"; };
+		8417006F1B056953004529EB /* EMTFisherTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMTFisherTests.h; path = ../../EMTFisherTests.h; sourceTree = "<group>"; };
+		841700701B056953004529EB /* EnumMethod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EnumMethod.cpp; path = ../../EnumMethod.cpp; sourceTree = "<group>"; };
+		841700711B056953004529EB /* EnumMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnumMethod.h; path = ../../EnumMethod.h; sourceTree = "<group>"; };
+		841700721B056953004529EB /* EnvGLNCmp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EnvGLNCmp.cpp; path = ../../EnvGLNCmp.cpp; sourceTree = "<group>"; };
+		841700731B056953004529EB /* EnvGLNCmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnvGLNCmp.h; path = ../../EnvGLNCmp.h; sourceTree = "<group>"; };
+		841700741B056953004529EB /* EnvGLNCmpIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EnvGLNCmpIO.cpp; path = ../../EnvGLNCmpIO.cpp; sourceTree = "<group>"; };
+		841700751B056953004529EB /* EnvGLNCmpParentSets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EnvGLNCmpParentSets.cpp; path = ../../EnvGLNCmpParentSets.cpp; sourceTree = "<group>"; };
+		841700761B056953004529EB /* EnvGLNRec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EnvGLNRec.cpp; path = ../../EnvGLNRec.cpp; sourceTree = "<group>"; };
+		841700771B056953004529EB /* EnvGLNRec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnvGLNRec.h; path = ../../EnvGLNRec.h; sourceTree = "<group>"; };
+		841700781B056953004529EB /* EnvGLNRecIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EnvGLNRecIO.cpp; path = ../../EnvGLNRecIO.cpp; sourceTree = "<group>"; };
+		841700791B056953004529EB /* EnvGLNRecParentSets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EnvGLNRecParentSets.cpp; path = ../../EnvGLNRecParentSets.cpp; sourceTree = "<group>"; };
+		8417007A1B056953004529EB /* ExactCPChisq2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExactCPChisq2.cpp; path = ../../ExactCPChisq2.cpp; sourceTree = "<group>"; };
+		8417007B1B056953004529EB /* ExactCPChisq3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExactCPChisq3.cpp; path = ../../ExactCPChisq3.cpp; sourceTree = "<group>"; };
+		8417007C1B056953004529EB /* ExactCPChisq3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExactCPChisq3.h; path = ../../ExactCPChisq3.h; sourceTree = "<group>"; };
+		8417007D1B056953004529EB /* ExactCPChisqTesting.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExactCPChisqTesting.cpp; path = ../../ExactCPChisqTesting.cpp; sourceTree = "<group>"; };
+		8417007E1B056953004529EB /* ExactFunctionalTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExactFunctionalTest.cpp; path = ../../ExactFunctionalTest.cpp; sourceTree = "<group>"; };
+		8417007F1B056953004529EB /* ExactFunctionalTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExactFunctionalTest.h; path = ../../ExactFunctionalTest.h; sourceTree = "<group>"; };
+		841700801B056953004529EB /* ExactMultiTableTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExactMultiTableTest.cpp; path = ../../ExactMultiTableTest.cpp; sourceTree = "<group>"; };
+		841700811B056953004529EB /* ExactMultiTableTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExactMultiTableTest.h; path = ../../ExactMultiTableTest.h; sourceTree = "<group>"; };
+		841700821B056953004529EB /* FactorialByGMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FactorialByGMP.h; path = ../../FactorialByGMP.h; sourceTree = "<group>"; };
+		841700831B056953004529EB /* fexact.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fexact.cpp; path = ../../fexact.cpp; sourceTree = "<group>"; };
+		841700841B056953004529EB /* FisherComparative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FisherComparative.cpp; path = ../../FisherComparative.cpp; sourceTree = "<group>"; };
+		841700851B056953004529EB /* FisherExactTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FisherExactTests.cpp; path = ../../FisherExactTests.cpp; sourceTree = "<group>"; };
+		841700861B056953004529EB /* GeneralizedTruthTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GeneralizedTruthTable.cpp; path = ../../GeneralizedTruthTable.cpp; sourceTree = "<group>"; };
+		841700871B056953004529EB /* GeneralizedTruthTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeneralizedTruthTable.h; path = ../../GeneralizedTruthTable.h; sourceTree = "<group>"; };
+		841700881B056953004529EB /* getopt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = getopt.cpp; path = ../../getopt.cpp; sourceTree = "<group>"; };
+		841700891B056953004529EB /* GLN_copyright.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLN_copyright.h; path = ../../GLN_copyright.h; sourceTree = "<group>"; };
+		8417008A1B056953004529EB /* GLN_evaluate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLN_evaluate.cpp; path = ../../GLN_evaluate.cpp; sourceTree = "<group>"; };
+		8417008B1B056953004529EB /* GLN_generate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLN_generate.cpp; path = ../../GLN_generate.cpp; sourceTree = "<group>"; };
+		8417008C1B056953004529EB /* GLN_IO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLN_IO.cpp; path = ../../GLN_IO.cpp; sourceTree = "<group>"; };
+		8417008D1B056953004529EB /* GLN_manpage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLN_manpage.cpp; path = ../../GLN_manpage.cpp; sourceTree = "<group>"; };
+		8417008E1B056953004529EB /* GLN_pathway.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = GLN_pathway.txt; path = ../../GLN_pathway.txt; sourceTree = "<group>"; };
+		8417008F1B056953004529EB /* GLN_simulate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLN_simulate.cpp; path = ../../GLN_simulate.cpp; sourceTree = "<group>"; };
+		841700901B056953004529EB /* GLN_Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLN_Test.cpp; path = ../../GLN_Test.cpp; sourceTree = "<group>"; };
+		841700911B056953004529EB /* GLN_TRJ.tcf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = GLN_TRJ.tcf; path = ../../GLN_TRJ.tcf; sourceTree = "<group>"; };
+		841700921B056953004529EB /* GLN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLN.cpp; path = ../../GLN.cpp; sourceTree = "<group>"; };
+		841700931B056953004529EB /* GLN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLN.h; path = ../../GLN.h; sourceTree = "<group>"; };
+		841700941B056953004529EB /* GLNAlcohol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLNAlcohol.cpp; path = ../../GLNAlcohol.cpp; sourceTree = "<group>"; };
+		841700951B056953004529EB /* GLNCompare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLNCompare.cpp; path = ../../GLNCompare.cpp; sourceTree = "<group>"; };
+		841700961B056953004529EB /* GLNConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLNConfig.h; path = ../../GLNConfig.h; sourceTree = "<group>"; };
+		841700971B056953004529EB /* GLNGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLNGlobals.h; path = ../../GLNGlobals.h; sourceTree = "<group>"; };
+		841700981B056953004529EB /* GLNPureReconstruction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLNPureReconstruction.cpp; path = ../../GLNPureReconstruction.cpp; sourceTree = "<group>"; };
+		841700991B056953004529EB /* GLNReconstruct.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLNReconstruct.cpp; path = ../../GLNReconstruct.cpp; sourceTree = "<group>"; };
+		8417009A1B056953004529EB /* glnsp */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = glnsp; path = ../../glnsp; sourceTree = "<group>"; };
+		8417009B1B056953004529EB /* GLNV5_May_20_2014 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GLNV5_May_20_2014; sourceTree = SOURCE_ROOT; };
+		8417009C1B056953004529EB /* history */ = {isa = PBXFileReference; lastKnownFileType = folder; name = history; path = ../../history; sourceTree = "<group>"; };
+		8417009D1B056953004529EB /* InteractionEvaluationController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InteractionEvaluationController.cpp; path = ../../InteractionEvaluationController.cpp; sourceTree = "<group>"; };
+		8417009E1B056953004529EB /* InteractionEvaluationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InteractionEvaluationController.h; path = ../../InteractionEvaluationController.h; sourceTree = "<group>"; };
+		8417009F1B056953004529EB /* Job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Job.h; path = ../../Job.h; sourceTree = "<group>"; };
+		841700A01B056953004529EB /* JobEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JobEnvironment.h; path = ../../JobEnvironment.h; sourceTree = "<group>"; };
+		841700A11B056953004529EB /* JobGLN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JobGLN.cpp; path = ../../JobGLN.cpp; sourceTree = "<group>"; };
+		841700A21B056953004529EB /* JobGLN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JobGLN.h; path = ../../JobGLN.h; sourceTree = "<group>"; };
+		841700A31B056953004529EB /* JobResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JobResult.h; path = ../../JobResult.h; sourceTree = "<group>"; };
+		841700A41B056953004529EB /* JobResultCmp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JobResultCmp.cpp; path = ../../JobResultCmp.cpp; sourceTree = "<group>"; };
+		841700A51B056953004529EB /* JobResultCmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JobResultCmp.h; path = ../../JobResultCmp.h; sourceTree = "<group>"; };
+		841700A61B056953004529EB /* JobResultRec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JobResultRec.cpp; path = ../../JobResultRec.cpp; sourceTree = "<group>"; };
+		841700A71B056953004529EB /* JobResultRec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JobResultRec.h; path = ../../JobResultRec.h; sourceTree = "<group>"; };
+		841700A81B056953004529EB /* kStop_Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = kStop_Node.cpp; path = ../../kStop_Node.cpp; sourceTree = "<group>"; };
+		841700A91B056953004529EB /* kStop_Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kStop_Node.h; path = ../../kStop_Node.h; sourceTree = "<group>"; };
+		841700AA1B056953004529EB /* kStop_SegmentPath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = kStop_SegmentPath.cpp; path = ../../kStop_SegmentPath.cpp; sourceTree = "<group>"; };
+		841700AB1B056953004529EB /* kStop_SegmentPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kStop_SegmentPath.h; path = ../../kStop_SegmentPath.h; sourceTree = "<group>"; };
+		841700AC1B056953004529EB /* kStop_TestCase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = kStop_TestCase.cpp; path = ../../kStop_TestCase.cpp; sourceTree = "<group>"; };
+		841700AD1B056953004529EB /* kStop_TestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kStop_TestCase.h; path = ../../kStop_TestCase.h; sourceTree = "<group>"; };
+		841700AE1B056953004529EB /* kStop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = kStop.cpp; path = ../../kStop.cpp; sourceTree = "<group>"; };
+		841700AF1B056953004529EB /* kStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kStop.h; path = ../../kStop.h; sourceTree = "<group>"; };
+		841700B01B056953004529EB /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = ../../Makefile; sourceTree = "<group>"; };
+		841700B11B056953004529EB /* MultinomialExactTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MultinomialExactTest.cpp; path = ../../MultinomialExactTest.cpp; sourceTree = "<group>"; };
+		841700B21B056953004529EB /* MultinomialExactTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultinomialExactTest.h; path = ../../MultinomialExactTest.h; sourceTree = "<group>"; };
+		841700B31B056953004529EB /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Node.cpp; path = ../../Node.cpp; sourceTree = "<group>"; };
+		841700B41B056953004529EB /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Node.h; path = ../../Node.h; sourceTree = "<group>"; };
+		841700B51B056953004529EB /* nr3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nr3.h; path = ../../nr3.h; sourceTree = "<group>"; };
+		841700B61B056953004529EB /* out */ = {isa = PBXFileReference; lastKnownFileType = folder; name = out; path = ../../out; sourceTree = "<group>"; };
+		841700B71B056953004529EB /* out_gln.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = out_gln.txt; path = ../../out_gln.txt; sourceTree = "<group>"; };
+		841700B81B056953004529EB /* output_GLN_N.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = output_GLN_N.txt; path = ../../output_GLN_N.txt; sourceTree = "<group>"; };
+		841700B91B056953004529EB /* outputGLN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = outputGLN.txt; path = ../../outputGLN.txt; sourceTree = "<group>"; };
+		841700BA1B056953004529EB /* outSummarizedResults.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = outSummarizedResults.txt; path = ../../outSummarizedResults.txt; sourceTree = "<group>"; };
+		841700BB1B056953004529EB /* PathwayStats.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PathwayStats.cpp; path = ../../PathwayStats.cpp; sourceTree = "<group>"; };
+		841700BC1B056953004529EB /* PathwayStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PathwayStats.h; path = ../../PathwayStats.h; sourceTree = "<group>"; };
+		841700BD1B056953004529EB /* PermStatTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PermStatTable.cpp; path = ../../PermStatTable.cpp; sourceTree = "<group>"; };
+		841700BE1B056953004529EB /* PermStatTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PermStatTable.h; path = ../../PermStatTable.h; sourceTree = "<group>"; };
+		841700BF1B056953004529EB /* ResampleGLN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ResampleGLN.cpp; path = ../../ResampleGLN.cpp; sourceTree = "<group>"; };
+		841700C01B056953004529EB /* ResampleTCF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ResampleTCF.cpp; path = ../../ResampleTCF.cpp; sourceTree = "<group>"; };
+		841700C11B056953004529EB /* RunMPIJobs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RunMPIJobs.cpp; path = ../../RunMPIJobs.cpp; sourceTree = "<group>"; };
+		841700C21B056953004529EB /* RunSPJobs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RunSPJobs.cpp; path = ../../RunSPJobs.cpp; sourceTree = "<group>"; };
+		841700C31B056953004529EB /* SetOps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SetOps.cpp; path = ../../SetOps.cpp; sourceTree = "<group>"; };
+		841700C41B056953004529EB /* SetOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SetOps.h; path = ../../SetOps.h; sourceTree = "<group>"; };
+		841700C51B056953004529EB /* StatDistributions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StatDistributions.cpp; path = ../../StatDistributions.cpp; sourceTree = "<group>"; };
+		841700C61B056953004529EB /* StatDistributions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatDistributions.h; path = ../../StatDistributions.h; sourceTree = "<group>"; };
+		841700C71B056953004529EB /* sum_chisqs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sum_chisqs.cpp; path = ../../sum_chisqs.cpp; sourceTree = "<group>"; };
+		841700C81B056953004529EB /* Topology.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Topology.cpp; path = ../../Topology.cpp; sourceTree = "<group>"; };
+		841700C91B056953004529EB /* Topology.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Topology.h; path = ../../Topology.h; sourceTree = "<group>"; };
+		841700CA1B056953004529EB /* TP53-runlog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "TP53-runlog.txt"; path = "../../TP53-runlog.txt"; sourceTree = "<group>"; };
+		841700CB1B056953004529EB /* TP53.trj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TP53.trj; path = ../../TP53.trj; sourceTree = "<group>"; };
+		841700CC1B056953004529EB /* TP53largeTable.trj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TP53largeTable.trj; path = ../../TP53largeTable.trj; sourceTree = "<group>"; };
+		841700CD1B056953004529EB /* TrajectoryCollection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TrajectoryCollection.cpp; path = ../../TrajectoryCollection.cpp; sourceTree = "<group>"; };
+		841700CE1B056953004529EB /* TrajectoryCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrajectoryCollection.h; path = ../../TrajectoryCollection.h; sourceTree = "<group>"; };
+		841700CF1B056953004529EB /* TrajectoryCollectionIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TrajectoryCollectionIO.cpp; path = ../../TrajectoryCollectionIO.cpp; sourceTree = "<group>"; };
+		841700D01B056953004529EB /* Transition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Transition.cpp; path = ../../Transition.cpp; sourceTree = "<group>"; };
+		841700D11B056953004529EB /* Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Transition.h; path = ../../Transition.h; sourceTree = "<group>"; };
+		841700D21B056953004529EB /* TransitionTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TransitionTable.cpp; path = ../../TransitionTable.cpp; sourceTree = "<group>"; };
+		841700D31B056953004529EB /* TransitionTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransitionTable.h; path = ../../TransitionTable.h; sourceTree = "<group>"; };
+		841700D41B056953004529EB /* TransitionTableIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TransitionTableIO.cpp; path = ../../TransitionTableIO.cpp; sourceTree = "<group>"; };
+		841700D51B056953004529EB /* TRPM8largeTable.trj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TRPM8largeTable.trj; path = ../../TRPM8largeTable.trj; sourceTree = "<group>"; };
+		841700D61B056953004529EB /* TRPV1largeTable.trj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TRPV1largeTable.trj; path = ../../TRPV1largeTable.trj; sourceTree = "<group>"; };
+		841700D71B056953004529EB /* TT-A.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "TT-A.txt"; path = "../../TT-A.txt"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		841700321B056770004529EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8417002C1B056770004529EB = {
+			isa = PBXGroup;
+			children = (
+				841700371B056770004529EB /* GLNV5_May_20_2014 */,
+				841700361B056770004529EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		841700361B056770004529EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				841700351B056770004529EB /* GLNV5_May_20_2014 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		841700371B056770004529EB /* GLNV5_May_20_2014 */ = {
+			isa = PBXGroup;
+			children = (
+				841700451B056953004529EB /* -A */,
+				841700461B056953004529EB /* -zSummarizedResults.txt */,
+				841700471B056953004529EB /* .DS_Store */,
+				841700481B056953004529EB /* AdjustPvalue.cpp */,
+				841700491B056953004529EB /* binom.cpp */,
+				8417004A1B056953004529EB /* ChisqDirTest.cpp */,
+				8417004B1B056953004529EB /* ChisqTests.cpp */,
+				8417004C1B056953004529EB /* ChisqTests.h */,
+				8417004D1B056953004529EB /* chr2-runlog.txt */,
+				8417004E1B056953004529EB /* chr2.trj */,
+				8417004F1B056953004529EB /* chr6-runlog.txt */,
+				841700501B056953004529EB /* chr6.trj */,
+				841700511B056953004529EB /* chr11-runlog.txt */,
+				841700521B056953004529EB /* chr11.trj */,
+				841700531B056953004529EB /* chr18.trj */,
+				841700541B056953004529EB /* chr19.trj */,
+				841700551B056953004529EB /* chr20.trj */,
+				841700561B056953004529EB /* chr23.trj */,
+				841700571B056953004529EB /* ComparativeChisq.cpp */,
+				841700581B056953004529EB /* ComparativeChisq.h */,
+				841700591B056953004529EB /* CompareChisq.cpp */,
+				8417005A1B056953004529EB /* ComparePathways.cpp */,
+				8417005B1B056953004529EB /* ConditionalAssociation.cpp */,
+				8417005C1B056953004529EB /* ConditionalAssociation.h */,
+				8417005D1B056953004529EB /* diff.dot */,
+				8417005E1B056953004529EB /* doc */,
+				8417005F1B056953004529EB /* DS_AdjacencyList.cpp */,
+				841700601B056953004529EB /* DS_AdjacencyList.h */,
+				841700611B056953004529EB /* DS_CompulsiveParents.cpp */,
+				841700621B056953004529EB /* DS_CompulsiveParents.h */,
+				841700631B056953004529EB /* DS_ConstraintFile.cpp */,
+				841700641B056953004529EB /* DS_ConstraintFile.h */,
+				841700651B056953004529EB /* DS_LocalConstraint.cpp */,
+				841700661B056953004529EB /* DS_LocalConstraint.h */,
+				841700671B056953004529EB /* DS_main.cpp */,
+				841700681B056953004529EB /* EffCGLN_DynamicPattern.cpp */,
+				841700691B056953004529EB /* EffCGLN_DynamicPattern.h */,
+				8417006A1B056953004529EB /* EffCGLN_GlobalConstraint.cpp */,
+				8417006B1B056953004529EB /* EffCGLN_GlobalConstraint.h */,
+				8417006C1B056953004529EB /* effective_dim.cpp */,
+				8417006D1B056953004529EB /* eigen_sym.h */,
+				8417006E1B056953004529EB /* EMTFisherTests.cpp */,
+				8417006F1B056953004529EB /* EMTFisherTests.h */,
+				841700701B056953004529EB /* EnumMethod.cpp */,
+				841700711B056953004529EB /* EnumMethod.h */,
+				841700721B056953004529EB /* EnvGLNCmp.cpp */,
+				841700731B056953004529EB /* EnvGLNCmp.h */,
+				841700741B056953004529EB /* EnvGLNCmpIO.cpp */,
+				841700751B056953004529EB /* EnvGLNCmpParentSets.cpp */,
+				841700761B056953004529EB /* EnvGLNRec.cpp */,
+				841700771B056953004529EB /* EnvGLNRec.h */,
+				841700781B056953004529EB /* EnvGLNRecIO.cpp */,
+				841700791B056953004529EB /* EnvGLNRecParentSets.cpp */,
+				8417007A1B056953004529EB /* ExactCPChisq2.cpp */,
+				8417007B1B056953004529EB /* ExactCPChisq3.cpp */,
+				8417007C1B056953004529EB /* ExactCPChisq3.h */,
+				8417007D1B056953004529EB /* ExactCPChisqTesting.cpp */,
+				8417007E1B056953004529EB /* ExactFunctionalTest.cpp */,
+				8417007F1B056953004529EB /* ExactFunctionalTest.h */,
+				841700801B056953004529EB /* ExactMultiTableTest.cpp */,
+				841700811B056953004529EB /* ExactMultiTableTest.h */,
+				841700821B056953004529EB /* FactorialByGMP.h */,
+				841700831B056953004529EB /* fexact.cpp */,
+				841700841B056953004529EB /* FisherComparative.cpp */,
+				841700851B056953004529EB /* FisherExactTests.cpp */,
+				841700861B056953004529EB /* GeneralizedTruthTable.cpp */,
+				841700871B056953004529EB /* GeneralizedTruthTable.h */,
+				841700881B056953004529EB /* getopt.cpp */,
+				841700891B056953004529EB /* GLN_copyright.h */,
+				8417008A1B056953004529EB /* GLN_evaluate.cpp */,
+				8417008B1B056953004529EB /* GLN_generate.cpp */,
+				8417008C1B056953004529EB /* GLN_IO.cpp */,
+				8417008D1B056953004529EB /* GLN_manpage.cpp */,
+				8417008E1B056953004529EB /* GLN_pathway.txt */,
+				8417008F1B056953004529EB /* GLN_simulate.cpp */,
+				841700901B056953004529EB /* GLN_Test.cpp */,
+				841700911B056953004529EB /* GLN_TRJ.tcf */,
+				841700921B056953004529EB /* GLN.cpp */,
+				841700931B056953004529EB /* GLN.h */,
+				841700941B056953004529EB /* GLNAlcohol.cpp */,
+				841700951B056953004529EB /* GLNCompare.cpp */,
+				841700961B056953004529EB /* GLNConfig.h */,
+				841700971B056953004529EB /* GLNGlobals.h */,
+				841700981B056953004529EB /* GLNPureReconstruction.cpp */,
+				841700991B056953004529EB /* GLNReconstruct.cpp */,
+				8417009A1B056953004529EB /* glnsp */,
+				8417009B1B056953004529EB /* GLNV5_May_20_2014 */,
+				8417009C1B056953004529EB /* history */,
+				8417009D1B056953004529EB /* InteractionEvaluationController.cpp */,
+				8417009E1B056953004529EB /* InteractionEvaluationController.h */,
+				8417009F1B056953004529EB /* Job.h */,
+				841700A01B056953004529EB /* JobEnvironment.h */,
+				841700A11B056953004529EB /* JobGLN.cpp */,
+				841700A21B056953004529EB /* JobGLN.h */,
+				841700A31B056953004529EB /* JobResult.h */,
+				841700A41B056953004529EB /* JobResultCmp.cpp */,
+				841700A51B056953004529EB /* JobResultCmp.h */,
+				841700A61B056953004529EB /* JobResultRec.cpp */,
+				841700A71B056953004529EB /* JobResultRec.h */,
+				841700A81B056953004529EB /* kStop_Node.cpp */,
+				841700A91B056953004529EB /* kStop_Node.h */,
+				841700AA1B056953004529EB /* kStop_SegmentPath.cpp */,
+				841700AB1B056953004529EB /* kStop_SegmentPath.h */,
+				841700AC1B056953004529EB /* kStop_TestCase.cpp */,
+				841700AD1B056953004529EB /* kStop_TestCase.h */,
+				841700AE1B056953004529EB /* kStop.cpp */,
+				841700AF1B056953004529EB /* kStop.h */,
+				841700B01B056953004529EB /* Makefile */,
+				841700B11B056953004529EB /* MultinomialExactTest.cpp */,
+				841700B21B056953004529EB /* MultinomialExactTest.h */,
+				841700B31B056953004529EB /* Node.cpp */,
+				841700B41B056953004529EB /* Node.h */,
+				841700B51B056953004529EB /* nr3.h */,
+				841700B61B056953004529EB /* out */,
+				841700B71B056953004529EB /* out_gln.txt */,
+				841700B81B056953004529EB /* output_GLN_N.txt */,
+				841700B91B056953004529EB /* outputGLN.txt */,
+				841700BA1B056953004529EB /* outSummarizedResults.txt */,
+				841700BB1B056953004529EB /* PathwayStats.cpp */,
+				841700BC1B056953004529EB /* PathwayStats.h */,
+				841700BD1B056953004529EB /* PermStatTable.cpp */,
+				841700BE1B056953004529EB /* PermStatTable.h */,
+				841700BF1B056953004529EB /* ResampleGLN.cpp */,
+				841700C01B056953004529EB /* ResampleTCF.cpp */,
+				841700C11B056953004529EB /* RunMPIJobs.cpp */,
+				841700C21B056953004529EB /* RunSPJobs.cpp */,
+				841700C31B056953004529EB /* SetOps.cpp */,
+				841700C41B056953004529EB /* SetOps.h */,
+				841700C51B056953004529EB /* StatDistributions.cpp */,
+				841700C61B056953004529EB /* StatDistributions.h */,
+				841700C71B056953004529EB /* sum_chisqs.cpp */,
+				841700C81B056953004529EB /* Topology.cpp */,
+				841700C91B056953004529EB /* Topology.h */,
+				841700CA1B056953004529EB /* TP53-runlog.txt */,
+				841700CB1B056953004529EB /* TP53.trj */,
+				841700CC1B056953004529EB /* TP53largeTable.trj */,
+				841700CD1B056953004529EB /* TrajectoryCollection.cpp */,
+				841700CE1B056953004529EB /* TrajectoryCollection.h */,
+				841700CF1B056953004529EB /* TrajectoryCollectionIO.cpp */,
+				841700D01B056953004529EB /* Transition.cpp */,
+				841700D11B056953004529EB /* Transition.h */,
+				841700D21B056953004529EB /* TransitionTable.cpp */,
+				841700D31B056953004529EB /* TransitionTable.h */,
+				841700D41B056953004529EB /* TransitionTableIO.cpp */,
+				841700D51B056953004529EB /* TRPM8largeTable.trj */,
+				841700D61B056953004529EB /* TRPV1largeTable.trj */,
+				841700D71B056953004529EB /* TT-A.txt */,
+				841700381B056770004529EB /* main.cpp */,
+			);
+			path = GLNV5_May_20_2014;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		841700341B056770004529EB /* GLNV5_May_20_2014 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8417003C1B056770004529EB /* Build configuration list for PBXNativeTarget "GLNV5_May_20_2014" */;
+			buildPhases = (
+				841700311B056770004529EB /* Sources */,
+				841700321B056770004529EB /* Frameworks */,
+				841700331B056770004529EB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLNV5_May_20_2014;
+			productName = GLNV5_May_20_2014;
+			productReference = 841700351B056770004529EB /* GLNV5_May_20_2014 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8417002D1B056770004529EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Nathan Anderson";
+				TargetAttributes = {
+					841700341B056770004529EB = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 841700301B056770004529EB /* Build configuration list for PBXProject "GLNV5_May_20_2014" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8417002C1B056770004529EB;
+			productRefGroup = 841700361B056770004529EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				841700341B056770004529EB /* GLNV5_May_20_2014 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		841700311B056770004529EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841700EA1B056953004529EB /* EnvGLNCmp.cpp in Sources */,
+				841700FC1B056953004529EB /* GLN_IO.cpp in Sources */,
+				841701051B056953004529EB /* InteractionEvaluationController.cpp in Sources */,
+				841700DB1B056953004529EB /* ChisqTests.cpp in Sources */,
+				841701171B056953004529EB /* StatDistributions.cpp in Sources */,
+				8417011C1B056953004529EB /* Transition.cpp in Sources */,
+				841700FB1B056953004529EB /* GLN_generate.cpp in Sources */,
+				841701151B056953004529EB /* RunSPJobs.cpp in Sources */,
+				841700DD1B056953004529EB /* CompareChisq.cpp in Sources */,
+				841701031B056953004529EB /* GLNPureReconstruction.cpp in Sources */,
+				841701021B056953004529EB /* GLNCompare.cpp in Sources */,
+				841701131B056953004529EB /* ResampleTCF.cpp in Sources */,
+				841700EE1B056953004529EB /* EnvGLNRecIO.cpp in Sources */,
+				8417011E1B056953004529EB /* TransitionTableIO.cpp in Sources */,
+				841700E71B056953004529EB /* effective_dim.cpp in Sources */,
+				841700DA1B056953004529EB /* ChisqDirTest.cpp in Sources */,
+				841700FF1B056953004529EB /* GLN_Test.cpp in Sources */,
+				8417011D1B056953004529EB /* TransitionTable.cpp in Sources */,
+				841701111B056953004529EB /* PermStatTable.cpp in Sources */,
+				841700391B056770004529EB /* main.cpp in Sources */,
+				841700F41B056953004529EB /* ExactMultiTableTest.cpp in Sources */,
+				841700DE1B056953004529EB /* ComparePathways.cpp in Sources */,
+				841700EF1B056953004529EB /* EnvGLNRecParentSets.cpp in Sources */,
+				841701161B056953004529EB /* SetOps.cpp in Sources */,
+				841701041B056953004529EB /* GLNReconstruct.cpp in Sources */,
+				841701011B056953004529EB /* GLNAlcohol.cpp in Sources */,
+				8417011B1B056953004529EB /* TrajectoryCollectionIO.cpp in Sources */,
+				841701081B056953004529EB /* JobResultRec.cpp in Sources */,
+				8417010D1B056953004529EB /* Makefile in Sources */,
+				841700F01B056953004529EB /* ExactCPChisq2.cpp in Sources */,
+				841701061B056953004529EB /* JobGLN.cpp in Sources */,
+				841700EB1B056953004529EB /* EnvGLNCmpIO.cpp in Sources */,
+				8417010F1B056953004529EB /* Node.cpp in Sources */,
+				841700D81B056953004529EB /* AdjustPvalue.cpp in Sources */,
+				841700F91B056953004529EB /* getopt.cpp in Sources */,
+				841701001B056953004529EB /* GLN.cpp in Sources */,
+				841700DF1B056953004529EB /* ConditionalAssociation.cpp in Sources */,
+				8417011A1B056953004529EB /* TrajectoryCollection.cpp in Sources */,
+				841700FE1B056953004529EB /* GLN_simulate.cpp in Sources */,
+				841700F21B056953004529EB /* ExactCPChisqTesting.cpp in Sources */,
+				841701191B056953004529EB /* Topology.cpp in Sources */,
+				841700ED1B056953004529EB /* EnvGLNRec.cpp in Sources */,
+				841700E81B056953004529EB /* EMTFisherTests.cpp in Sources */,
+				841700F11B056953004529EB /* ExactCPChisq3.cpp in Sources */,
+				841700FD1B056953004529EB /* GLN_manpage.cpp in Sources */,
+				841700F31B056953004529EB /* ExactFunctionalTest.cpp in Sources */,
+				841701071B056953004529EB /* JobResultCmp.cpp in Sources */,
+				841700F81B056953004529EB /* GeneralizedTruthTable.cpp in Sources */,
+				841700E91B056953004529EB /* EnumMethod.cpp in Sources */,
+				8417010E1B056953004529EB /* MultinomialExactTest.cpp in Sources */,
+				841701181B056953004529EB /* sum_chisqs.cpp in Sources */,
+				841700EC1B056953004529EB /* EnvGLNCmpParentSets.cpp in Sources */,
+				841701121B056953004529EB /* ResampleGLN.cpp in Sources */,
+				841700FA1B056953004529EB /* GLN_evaluate.cpp in Sources */,
+				841700DC1B056953004529EB /* ComparativeChisq.cpp in Sources */,
+				841700F51B056953004529EB /* fexact.cpp in Sources */,
+				841701101B056953004529EB /* PathwayStats.cpp in Sources */,
+				841701141B056953004529EB /* RunMPIJobs.cpp in Sources */,
+				841700D91B056953004529EB /* binom.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8417003A1B056770004529EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8417003B1B056770004529EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8417003D1B056770004529EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PATH)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/usr/local/include /opt/local/include";
+			};
+			name = Debug;
+		};
+		8417003E1B056770004529EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PATH)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/usr/local/include /opt/local/include";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		841700301B056770004529EB /* Build configuration list for PBXProject "GLNV5_May_20_2014" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8417003A1B056770004529EB /* Debug */,
+				8417003B1B056770004529EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8417003C1B056770004529EB /* Build configuration list for PBXNativeTarget "GLNV5_May_20_2014" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8417003D1B056770004529EB /* Debug */,
+				8417003E1B056770004529EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8417002D1B056770004529EB /* Project object */;
+}
