@@ -1410,20 +1410,149 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
          
          outfile.close();
          
-         //sprintf(command, "gzip -f %s", outfilename, outfilename);
-         //if (std::system(0)) {
-            // A command processor is available.
-            //std::system(command);
-         //} else {
-         //   cout << "A command processor is not available.\n";
-         //}
-         sprintf(testfilename, "GLNV5_May_20_2014/chr%d.trj", Chr[i]);
-         sprintf(command, "mv -f %s %s", outfilename, testfilename);
-         if (std::system(0)) {
-         // A command processor is available.
-         std::system(command);
+         
+         ifstream oldfile;
+         string oldfilename = "";
+         string oldbuffer = "";
+         string testbuffer = "";
+         int num1, num2;
+         
+         testfile.open("GWAsim.trj");
+         
+         if (!testfile.fail()){
+            outfile.open("GWAsimOld.trj");
+            
+            if (!outfile.fail()){
+               printf("over writing old file\n");
+               while (!testfile.eof()){
+                  getline(testfile, testbuffer);
+                  
+                  if (!testfile.eof()){
+                     outfile << testbuffer << endl;
+                  }
+               }
+               outfile.close();
+            }
+            testfile.close();
+            
+            outfile.open("GWAsim.trj");
+            
+            if (!outfile.fail()){
+               printf("writing to new GWAs\n");
+               oldfile.open("GWAsimOld.trj");
+               
+               if (!oldfile.fail()){
+                  printf("reading old file to merge\n");
+                  sprintf(testfilename, "chr%d.trj", Chr[i]);
+                  testfile.open(testfilename);
+                  
+                  if (!testfile.fail()) {
+                     printf("reading test file to merge\n");
+                     getline(oldfile, oldbuffer);
+                     getline(testfile, testbuffer);
+                     
+                     outfile << oldbuffer << endl;
+                     
+                     oldfile >> num1;
+                     testfile >> num2;
+                     
+                     outfile << num1 << " ";
+                     
+                     oldfile >> num1;
+                     testfile >> num2;
+                     
+                     outfile << (num1 + num2 - 2);
+                     
+                     getline(oldfile, oldbuffer);
+                     getline(testfile, testbuffer);
+                     
+                     outfile << oldbuffer << endl;
+                     
+                     testfile >> oldbuffer;
+                     testfile >> testbuffer;
+                     
+                     getline(oldfile, oldbuffer);
+                     getline(testfile, testbuffer);
+                     
+                     outfile << oldbuffer;
+                     outfile << testbuffer << endl;
+                     
+                     getline(oldfile, oldbuffer);
+                     getline(testfile, testbuffer);
+                     
+                     testfile >> oldbuffer;
+                     testfile >> testbuffer;
+                     
+                     getline(oldfile, oldbuffer);
+                     getline(testfile, testbuffer);
+                     
+                     outfile << oldbuffer;
+                     outfile << testbuffer << endl;
+                     
+                     testfile >> oldbuffer;
+                     testfile >> testbuffer;
+                     
+                     getline(oldfile, oldbuffer);
+                     getline(testfile, testbuffer);
+                     
+                     outfile << oldbuffer;
+                     outfile << testbuffer << endl;
+                     
+                     testfile >> oldbuffer;
+                     testfile >> testbuffer;
+                     
+                     getline(oldfile, oldbuffer);
+                     getline(testfile, testbuffer);
+                     
+                     outfile << oldbuffer;
+                     outfile << testbuffer << endl;
+                     
+                     while (!testfile.eof() && !oldfile.eof()){
+                        getline(oldfile, oldbuffer);
+                        getline(testfile, testbuffer);
+                        
+                        if (!testfile.eof() && !oldfile.eof()){
+                           outfile << endl << oldbuffer << endl;
+                        
+                           testfile >> testbuffer;
+                           testfile >> testbuffer;
+                           
+                           getline(oldfile, oldbuffer);
+                           getline(testfile, testbuffer);
+                        
+                           outfile << oldbuffer << " ";
+                           outfile << testbuffer << endl;
+                        }
+                     }
+                     outfile.seekp((long)outfile.tellp() - 1); // Take off last space
+                     
+                     testfile.close();
+                  }
+                  
+                  oldfile.close();
+               }
+               outfile.close();
+            }
+            
          } else {
-            cout << "A command processor is not available.\n";
+            outfile.open("GWAsim.trj");
+            printf("first one copied\n");
+            if (!outfile.fail()){
+               sprintf(testfilename, "chr%d.trj", Chr[i]);
+               testfile.open(testfilename);
+               
+               if (!testfile.fail()){
+                  while (!testfile.eof()){
+                     getline(testfile, testbuffer);
+                     
+                     if (!testfile.eof()){
+                        outfile << testbuffer << endl;
+                     }
+                  }
+                  testfile.close();
+               }
+               outfile.close();
+            }
          }
          
          sprintf(testfilename, "GLNV5_May_20_2014/chr%d.trj", Chr[i]);
@@ -1434,8 +1563,20 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
          } else {
             cout << "A command processor is not available.\n";
          }
+         
       }
    }
+   
+   
+   sprintf(testfilename, "GLNV5_May_20_2014/GWAsim.trj");
+   sprintf(command, "mv -f %s %s", "GWAsim.trj", testfilename);
+   if (std::system(0)) {
+      // A command processor is available.
+      std::system(command);
+   } else {
+      cout << "A command processor is not available.\n";
+   }
+   
 }
 
 

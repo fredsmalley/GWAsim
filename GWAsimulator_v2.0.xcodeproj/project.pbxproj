@@ -37,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		8417003F1B056770004529EB /* GLNV5_May_20_2014.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLNV5_May_20_2014.xcodeproj; path = GLNV5_May_20_2014/GLNV5_May_20_2014/GLNV5_May_20_2014.xcodeproj; sourceTree = "<group>"; };
+		8417011F1B057AF0004529EB /* schema.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.txt; sourceTree = "<group>"; };
+		8426E5741B06B20D001124C1 /* Illumina300KCEU */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Illumina300KCEU; sourceTree = "<group>"; };
 		8436322E1B0133300004D791 /* GWAsimulator_v2.0.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = GWAsimulator_v2.0.pdf; sourceTree = "<group>"; };
 		843632311B0162630004D791 /* diseasemodel.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = diseasemodel.txt; sourceTree = "<group>"; };
 		843BCAD01AFC025B0090E117 /* libgzstream.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgzstream.a; sourceTree = "<group>"; };
@@ -72,9 +74,11 @@
 		84484A0B1AF9220E00DCB671 = {
 			isa = PBXGroup;
 			children = (
+				8417011F1B057AF0004529EB /* schema.txt */,
 				8417003F1B056770004529EB /* GLNV5_May_20_2014.xcodeproj */,
 				843BCAD31AFC19660090E117 /* control.dat */,
 				843632311B0162630004D791 /* diseasemodel.txt */,
+				8426E5741B06B20D001124C1 /* Illumina300KCEU */,
 				84484A161AF9220E00DCB671 /* GWAsimulator_v2.0 */,
 				84484A151AF9220E00DCB671 /* Products */,
 			);
