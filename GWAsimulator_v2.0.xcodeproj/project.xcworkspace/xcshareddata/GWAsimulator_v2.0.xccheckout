@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D72C77F3-8B2D-466C-AFEC-5509E73370D9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GWAsimulator_v2.0</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2A5AD3EA4DF206CB2F58B212B0C895D9DC7B3DAC</key>
+		<string>https://github.com/nathanAndrinoid/GWAsim.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GWAsimulator_v2.0.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2A5AD3EA4DF206CB2F58B212B0C895D9DC7B3DAC</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nathanAndrinoid/GWAsim.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2A5AD3EA4DF206CB2F58B212B0C895D9DC7B3DAC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2A5AD3EA4DF206CB2F58B212B0C895D9DC7B3DAC</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2A5AD3EA4DF206CB2F58B212B0C895D9DC7B3DAC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GWAsim</string>
+		</dict>
+	</array>
+</dict>
+</plist>

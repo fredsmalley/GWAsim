@@ -14,6 +14,9 @@
 #include <fstream>
 #include <cstdlib>
 #include <vector>
+#include <map>
+#include <utility>
+#include <sstream>
 #include <math.h>
 using namespace std;
 
