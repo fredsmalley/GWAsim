@@ -1245,6 +1245,43 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
 	exit(1);
       }
 
+	 // trajectory format
+	 if(!strcmp(OUTFORMAT, "trajectory")) {
+		 outfile << "TRAJECTORY_VER2.1" << endl;
+		 outfile << n_person << " " << endpos - startpos + 2 << " 0" << endl;
+		 outfile << "2 3";
+		 for (k=startpos; k<=endpos; k++)
+			 outfile << " 3";
+		 outfile << endl << endl;
+		 
+		 outfile << "SEX STATUS";
+		 for (k=startpos; k<=endpos; k++)
+			 outfile << " " << k+1;
+		 outfile << endl;
+		 outfile << "No No";
+		 for (k=startpos; k<=endpos; k++)
+			 outfile << " Yes";
+		 outfile << endl;
+		 outfile << "No Yes";
+		 for (k=startpos; k<=endpos; k++)
+			 outfile << " No";
+		 outfile << endl << endl;
+		 
+		 for(j=0; j<n_person; j++) {
+			 outfile << "1" << endl;
+			 // sex:  0=male, 1=female
+			 sex = ((j < NUMCASEF) | (j >= step2 & j < step3));
+			 // affection status:  0=unknown, 1=unaffected, 2=affected
+			 // for population sampling, all subjects' status is 0
+			 status = (NUMDL>0) ? (j < NUMCASEF + NUMCASEM) + 1 : 0;
+			 outfile << sex << " " << status;
+			 // genotype: 0, 1, 2 copies of disease allele
+			 for(k=startpos; k<=endpos; k++)
+				 outfile << " " << sim_hap[i][2*j][k] + sim_hap[i][2*j+1][k];
+			 outfile << endl << endl;
+		 }
+	 }
+		 
       // linkage format
       if(!strcmp(OUTFORMAT, "linkage")) {
 	for(j=0; j<n_person; j++) {
