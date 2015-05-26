@@ -1191,6 +1191,7 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
 {
   int i, j, k, sex, status, startpos, endpos, fileexist=0;
   char outfilename[1024], testfilename[1024], command[1024];
+  char outfileformat[15] = "chr%d.dat", gzoutfileformat[15] = "chr%d.dat.gz";
   ofstream outfile;
   ifstream testfile;
 
@@ -1199,11 +1200,15 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
   int n_person = NUMCASEF + NUMCASEM + NUMCONTF + NUMCONTM;
   int n_hap = 2*(NUMCASEF + NUMCASEM + NUMCONTF + NUMCONTM);
 
+	if (!strcmp(OUTFORMAT, "trajectory")) {
+	  strcpy(outfileformat, "chr%d.trj");
+		strcpy(gzoutfileformat, "chr%d.trj.gz");
+	}
   // remove old chr#.dat or chr#.dat.gz files
   // This is useful especially for regional simulations to avoid having 
   // files for chromosomes that are not simulated in the last run.
   for(i=0; i<23; i++) {
-    sprintf(testfilename, "chr%d.dat", Chr[i]);
+    sprintf(testfilename, outfileformat, Chr[i]);
     testfile.open(testfilename);
     if(testfile.is_open()) {
       if(fileexist==0) {
@@ -1215,7 +1220,7 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
 	cout<<"Remove operation failed for " << testfilename << endl;
     }
 
-    sprintf(testfilename, "chr%d.dat.gz", Chr[i]);
+    sprintf(testfilename, gzoutfileformat, Chr[i]);
     testfile.open(testfilename);
     if(testfile.is_open()) {
       if(fileexist==0) {
@@ -1238,7 +1243,7 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
 	startpos=Start[i]-1; endpos=End[i]-1;
       }
 
-      sprintf(outfilename, "chr%d.dat", Chr[i]);
+      sprintf(outfilename, outfileformat, Chr[i]);
       outfile.open(outfilename);
       if(outfile.fail()){
 	cout<< "Output file: "<< outfilename << " cannot be opened!"; 
@@ -1248,7 +1253,7 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
 	 // trajectory format
 	 if(!strcmp(OUTFORMAT, "trajectory")) {
 		 outfile << "TRAJECTORY_VER2.1" << endl;
-		 outfile << n_person << " " << endpos - startpos + 2 << " 0" << endl;
+		 outfile << n_person << " " << (endpos - startpos + 1) + 2 << " 0" << endl;
 		 outfile << "2 3";
 		 for (k=startpos; k<=endpos; k++)
 			 outfile << " 3";
@@ -1256,7 +1261,7 @@ void output(int NUMCASEF, int NUMCASEM, int NUMCONTF, int NUMCONTM,
 		 
 		 outfile << "SEX STATUS";
 		 for (k=startpos; k<=endpos; k++)
-			 outfile << " " << k+1;
+			 outfile << " Chr" << Chr[i] << "_" << k+1;
 		 outfile << endl;
 		 outfile << "No No";
 		 for (k=startpos; k<=endpos; k++)
